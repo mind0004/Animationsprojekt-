@@ -1,0 +1,108 @@
+/**** SCENOGRAFI ***/
+
+#scene {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#baggrund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/scenografi.svg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+
+/**** KARAKTERERE ***/
+
+#laerer_container {
+    position: absolute;
+    top: -7vw;
+    left: 45vw;
+    z-index: 30;
+}
+
+.laerer_sprite {
+    background-image: url(img/laerer.svg);
+    background-size: 400%;
+    width: 40vw;
+    height: 60vw;
+    transform: scale(0.7);
+    animation-name: laerer_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes laerer_kf {
+    0% {
+        background-position: 0% -400%;
+    }
+    100% {
+        background-position: -400% -0%;
+    }
+}
+
+RAW Paste Data <!DOCTYPE html > <html lang="da" > <head > <meta charset="utf-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > Privat Snak</title > <link rel="stylesheet" href="stylesheet.css" > </head > <body > <div id="scene" > <div id="baggrund" > <div id="laerer_container" > <div class="laerer_sprite" > </div > </div > </div > </div > <script src="https://code.jquery.com/jquery-3.2.1.min.js" > </script > <script src="javascript.js" > </script > </body > </html >
+/**** SCENOGRAFI ***/
+
+#scene {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#baggrund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/scenografi.svg);
+    background-size: 100%;
+    z-index: 1;
+}
+
+
+/**** KARAKTERERE ***/
+
+#laerer_container {
+    position: absolute;
+    top: -7vw;
+    left: 45vw;
+    z-index: 30;
+}
+
+.laerer_sprite {
+    background-image: url(img/laerer.svg);
+    background-size: 400%;
+    width: 40vw;
+    height: 60vw;
+    transform: scale(0.7);
+    animation-name: laerer_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes laerer_kf {
+    0% {
+        background-position: 0% -400%;
+    }
+    100% {
+        background-position: -400% -0%;
+    }
+}
