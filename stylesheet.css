@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 /**** SCENOGRAFI ***/
 
 #scene {
@@ -5,7 +10,6 @@
     width: 100vw;
     height: 56.25vw;
     margin: auto;
-    border: 1px solid black;
     overflow: hidden;
 }
 
@@ -16,63 +20,67 @@
     width: 100%;
     height: 100%;
     background-image: url(img/scenografi.svg);
-    background-size: 100%;
+    background-size: 100% 100%;
     z-index: 1;
 }
 
-
-/**** KARAKTERERE ***/
-
-#laerer_container {
+#titel {
     position: absolute;
-    top: -7vw;
-    left: 45vw;
-    z-index: 30;
+    z-index: 20;
+    background-image: url(img/tavle.svg);
+    background-size: 100% 100%;
+    width: 84vw;
+    height: 50vw;
 }
 
-.laerer_sprite {
-    background-image: url(img/laerer.svg);
-    background-size: 400%;
-    width: 40vw;
-    height: 60vw;
-    transform: scale(0.7);
-    animation-name: laerer_kf;
-    animation-duration: 1s;
-    animation-timing-function: steps(4);
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+.titel_ind {
+    left: 8%;
+    top: -100%;
+    animation-name: titel_ind_kf;
+    animation-duration: 2.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes laerer_kf {
+@keyframes titel_ind_kf {
     0% {
-        background-position: 0% -400%;
+        left: 8%;
+        top: -100%;
     }
+
+    30% {
+        left: 8%;
+        top: 9%;
+    }
+
+    65% {
+        left: 8%;
+        top: 5%;
+    }
+
+
     100% {
-        background-position: -400% -0%;
+        left: 8%;
+        top: 5%;
     }
+
 }
 
-RAW Paste Data <!DOCTYPE html > <html lang="da" > <head > <meta charset="utf-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title > Privat Snak</title > <link rel="stylesheet" href="stylesheet.css" > </head > <body > <div id="scene" > <div id="baggrund" > <div id="laerer_container" > <div class="laerer_sprite" > </div > </div > </div > </div > <script src="https://code.jquery.com/jquery-3.2.1.min.js" > </script > <script src="javascript.js" > </script > </body > </html >
-/**** SCENOGRAFI ***/
-
-#scene {
-    position: relative;
-    width: 100vw;
-    height: 56.25vw;
-    margin: auto;
-    border: 1px solid black;
-    overflow: hidden;
+.titel_start_pos {
+    left: 8%;
+    top: -100%;
 }
 
-#baggrund {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(img/scenografi.svg);
-    background-size: 100%;
-    z-index: 1;
+#titel h2 {
+    margin-left: 6%;
+    margin-top: 6%;
+    font-family: 'Londrina Sketch', cursive;
+    color: white;
+    font-size: 3em;
+}
+
+#titel p {
+    margin-left: 6%;
 }
 
 
@@ -82,7 +90,7 @@ RAW Paste Data <!DOCTYPE html > <html lang="da" > <head > <meta charset="utf-8" 
     position: absolute;
     top: -7vw;
     left: 45vw;
-    z-index: 30;
+    z-index: 15;
 }
 
 .laerer_sprite {
