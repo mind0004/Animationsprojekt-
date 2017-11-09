@@ -19,9 +19,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/scenografi2.svg);
+    background-image: url(img/scenografi3.svg);
     background-size: 100% 100%;
     z-index: 1;
+}
+
+#forgrund {
+    position: absolute;
+    bottom: -1%;
+    left: 15%;
+    width: 66vw;
+    height: 28.40vw;
+    background-image: url(img/forgrund.svg);
+    background-size: 100% 100%;
+    z-index: 17;
 }
 
 #titel {
