@@ -115,3 +115,17 @@ body {
         background-position: -400% 0%;
     }
 }
+
+
+#spand {
+    background-image: url(img/spand.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 7vw;
+    height: 9.6vw;
+    top: 25vw;
+    left: 80vw;
+
+    z-index: 16;
+
+}
