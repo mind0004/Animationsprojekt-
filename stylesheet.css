@@ -94,7 +94,7 @@ body {
 }
 
 .laerer_sprite {
-    background-image: url(img/skole.svg);
+    background-image: url(img/laerer.svg);
     background-size: 400%;
     width: 40vw;
     height: 60vw;
@@ -114,18 +114,4 @@ body {
     100% {
         background-position: -400% 0%;
     }
-}
-
-
-#spand {
-    background-image: url(img/spand.svg);
-    background-size: 100%;
-    position: absolute;
-    width: 7vw;
-    height: 9.6vw;
-    top: 25vw;
-    left: 80vw;
-
-    z-index: 16;
-
 }
