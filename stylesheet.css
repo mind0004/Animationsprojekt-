@@ -100,7 +100,7 @@ body {
     height: 60vw;
     transform: scale(0.7);
     animation-name: laerer_kf;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: steps(4);
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
@@ -108,9 +108,10 @@ body {
 
 @keyframes laerer_kf {
     0% {
-        background-position: 0% -400%;
+        background-position: 0% 0%;
     }
+
     100% {
-        background-position: -400% -0%;
+        background-position: -400% 0%;
     }
 }
