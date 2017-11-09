@@ -1,1 +1,20 @@
-<svg id="skraldespand" xmlns="http://www.w3.org/2000/svg" width="119.29" height="165.14" viewBox="0 0 119.29 165.14"><defs><style>.cls-1{fill:#d3dddc;}.cls-1,.cls-5{stroke:#a6b2b1;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#fff;}.cls-3{fill:#e6eded;}.cls-4{fill:#e3e5e5;}.cls-5{fill:#d7e0df;}</style></defs><title>spand</title><ellipse class="cls-1" cx="59.69" cy="41" rx="58.44" ry="7.15"/><polygon class="cls-2" points="17.86 11.76 22.72 0 65.06 60.9 17.86 11.76"/><polygon class="cls-3" points="1.78 15.58 18.59 11.17 67.5 61.98 14.77 18.9 1.78 15.58"/><polygon class="cls-2" points="13.52 24.96 9.47 36.32 67.5 61.98 14.77 18.9 13.52 24.96"/><polygon class="cls-4" points="1.78 15.58 13.52 24.96 14.77 18.9 1.78 15.58"/><path class="cls-5" d="M1429.65,573.39s43,13.67,71.12,0l24-115.15s-45.39,13.92-116.71,0Z" transform="translate(-1406.84 -415.32)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="skraldespand" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 119.3 165.1" style="enable-background:new 0 0 119.3 165.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B6C1BF;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#E6EDED;}
+	.st3{fill:#E3E5E5;}
+	.st4{fill:#D7E0DF;}
+</style>
+<ellipse class="st0" cx="59" cy="41.5" rx="58.4" ry="7.6"/>
+<g>
+	<polygon class="st1" points="17.9,11.8 22.7,0 65.1,60.9 	"/>
+	<polygon class="st2" points="1.8,15.6 18.6,11.2 67.5,62 14.8,18.9 	"/>
+	<polygon class="st1" points="13.5,25 9.5,36.3 67.5,62 14.8,18.9 	"/>
+	<polygon class="st3" points="1.8,15.6 13.5,25 14.8,18.9 	"/>
+</g>
+<path class="st4" d="M22.3,158c0,0,43,13.9,71.1,0l24-116.8c0,0-45.4,14.1-116.7,0L22.3,158z"/>
+</svg>
