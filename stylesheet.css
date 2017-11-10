@@ -173,3 +173,51 @@ body {
     background-size: 100% 100%;
     z-index: 1;
 }
+
+#haand_container {
+    position: absolute;
+    height: 100vw;
+    width: 65vw;
+    z-index: 1;
+}
+
+#haand_flade_sprite {
+    position: absolute;
+    background-image: url(/img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+}
+
+#haand_fingre_sprite {
+    position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+    background-position: 0 200%;
+}
+
+#haand_tommelfinger_sprite {
+    position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 250%;
+    animation-name: thumb_kf;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
+
+@keyframes thumb_kf {
+    0% {
+        background-position: 0% 250%
+    }
+    100% {
+        background-position: -400% 250%
+    }
+
+}
