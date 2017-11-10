@@ -355,11 +355,11 @@ body {
 
 #besked1 {
     position: absolute;
+    background-image: url(img/besked_et.svg);
     background-size: 100%;
     z-index: 6;
     width: 10vw;
-    height: 2.4vw;
-    left: 10%;
+    height: 2.75vw;
     top: 15%;
 }
 
