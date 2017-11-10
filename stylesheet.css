@@ -19,7 +19,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/scenografi7.svg);
+    background-image: url(img/scenografi.svg);
     background-size: 100% 100%;
     z-index: 1;
 }
@@ -27,12 +27,19 @@ body {
 #laptop {
     position: absolute;
     bottom: 8.5%;
-    left: 44%;
+    left: 45%;
     width: 29vw;
     height: 23.5vw;
     background-image: url(img/laptop.svg);
     background-size: 100% 100%;
     z-index: 17;
+
+    transition: all 0.5s ease;
+    transform: scale(0.9);
+}
+
+#laptop:hover {
+    transform: scale(1);
 }
 
 #plakat {
@@ -44,13 +51,14 @@ body {
     height: 16.6vw;
 
     transition: all 0.5s ease;
+    transform: scale(0.8);
 
     left: 4%;
     top: 9%;
 }
 
 #plakat:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(0.9);
 }
 
 #titel {
