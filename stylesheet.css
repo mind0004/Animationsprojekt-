@@ -25,7 +25,7 @@ body {
 }
 
 #banan {
-     position: absolute;
+    position: absolute;
     bottom: 20%;
     left: 40%;
     width: 8vw;
@@ -243,10 +243,29 @@ body {
     left: 10.9%;
     top: 7.5%;
 
+    opacity: 0;
     z-index: 5;
     overflow: hidden;
-    opacity: 0;
 }
+
+.mobil_container2_vis {
+    opacity: 1;
+    animation-delay: 3s;
+    animation-name: fade_in_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_kf {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 #slide_ind {
     position: absolute;
@@ -294,16 +313,15 @@ body {
 #haand_tommelfinger_sprite {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;
-    height: 100%;
-    width: 100%;
+    background-size: 400% 300%;height: 100%;
+width: 100%;
     background-position: 0% 250%;
     animation-name: thumb_kf;
     animation-duration: .4s;
     animation-fill-mode: forwards;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
     animation-delay: 2s;
-    animation-timing-function: steps(4);
+    animation-timing-function: steps(3);
 
     z-index: 5;
 }
@@ -314,7 +332,7 @@ body {
         background-position: 0% 250%
     }
     100% {
-        background-position: -400% 250%
+        background-position: -300% 250%
     }
 
 }
