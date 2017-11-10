@@ -72,6 +72,22 @@ body {
     transform: scale(0.9);
 }
 
+#ur {
+    position: absolute;
+    z-index: 25;
+    background-image: url(img/ur.svg);
+    background-size: 100% 100%;
+    width: 8vw;
+    height: 8vw;
+    top: 10%;
+    right: 6%;
+    transition: all 0.5s ease;
+}
+
+#ur:hover {
+    transform: scale(1.15);
+}
+
 #titel {
     position: absolute;
     z-index: 25;
@@ -183,4 +199,71 @@ body {
     background-image: url(img/scene_2_img.svg);
     background-size: 100% 100%;
     z-index: 1;
+}
+
+#haand_container {
+    position: absolute;
+    height: 100vw;
+    width: 65vw;
+    z-index: 1;
+    animation-name: move_kf;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes move_kf {
+
+    0% {
+        right: -80%;
+        top: 50%;
+    }
+    100% {
+        right: 17%;
+        top: 5%
+    }
+
+}
+
+
+
+#haand_flade_sprite {
+    position: absolute;
+    background-image: url(/img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+}
+
+#haand_fingre_sprite {
+    position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+    background-position: 0 200%;
+}
+
+#haand_tommelfinger_sprite {
+    position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 250%;
+    animation-name: thumb_kf;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
+
+@keyframes thumb_kf {
+    0% {
+        background-position: 0% 250%
+    }
+    100% {
+        background-position: -400% 250%
+    }
+
 }
