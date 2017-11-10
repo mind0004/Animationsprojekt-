@@ -200,7 +200,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-
 @keyframes move_kf {
 
     0% {
@@ -211,10 +210,55 @@ body {
         right: 17%;
         top: 5%
     }
-
 }
 
+#mobil_container {
+    position: absolute;
+    background-color: green;
+    width: 17.7vw;
+    height: 30.8vw;
+    left: 10.9%;
+    top: 7.5%;
 
+    z-index: 4;
+    overflow: hidden;
+}
+
+#mobil_container2 {
+    position: absolute;
+    background-color: blue;
+    width: 17.7vw;
+    height: 30.8vw;
+    left: 10.9%;
+    top: 7.5%;
+
+    z-index: 5;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#slide_ind {
+    position: absolute;
+    background-color: blue;
+    width: 5vw;
+    height: 5vw;
+    top: 40%;
+    left: 18%;
+    animation-name: slide_ind_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s
+}
+
+@keyframes slide_ind_kf {
+    0% {
+        left: 18%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
 
 #haand_flade_sprite {
     position: absolute;
@@ -222,6 +266,7 @@ body {
     background-size: 400% 300%;
     height: 100%;
     width: 100%;
+    z-index: 3;
 }
 
 #haand_fingre_sprite {
@@ -231,6 +276,8 @@ body {
     height: 100%;
     width: 100%;
     background-position: 0 200%;
+
+    z-index: 5;
 }
 
 #haand_tommelfinger_sprite {
@@ -241,9 +288,13 @@ body {
     width: 100%;
     background-position: 0% 250%;
     animation-name: thumb_kf;
-    animation-duration: .7s;
-    animation-iteration-count: infinite;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-delay: 2s;
     animation-timing-function: steps(4);
+
+    z-index: 5;
 }
 
 
