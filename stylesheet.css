@@ -63,7 +63,7 @@ body {
 
 #titel {
     position: absolute;
-    z-index: 20;
+    z-index: 25;
     background-image: url(img/tavle.svg);
     background-size: 100% 100%;
     width: 84vw;
