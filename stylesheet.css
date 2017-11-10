@@ -313,15 +313,16 @@ body {
 #haand_tommelfinger_sprite {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;height: 100%;
-width: 100%;
+    background-size: 400% 300%;
+    height: 100%;
+    width: 100%;
     background-position: 0% 250%;
     animation-name: thumb_kf;
-    animation-duration: .4s;
+    animation-duration: .2s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
     animation-fill-mode: forwards;
-    animation-direction: alternate;
     animation-delay: 2s;
-    animation-timing-function: steps(3);
 
     z-index: 5;
 }
@@ -332,7 +333,7 @@ width: 100%;
         background-position: 0% 250%
     }
     100% {
-        background-position: -300% 250%
+        background-position: -199.8% 250%
     }
 
 }
