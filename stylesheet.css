@@ -35,6 +35,24 @@ body {
     z-index: 17;
 }
 
+#plakat {
+    position: absolute;
+    z-index: 20;
+    background-image: url(img/plakat.svg);
+    background-size: 100% 100%;
+    width: 13vw;
+    height: 16.6vw;
+
+    transition: all 0.5s ease;
+
+    left: 4%;
+    top: 9%;
+}
+
+#plakat:hover {
+    transform: scale(1.1);
+}
+
 #titel {
     position: absolute;
     z-index: 20;
