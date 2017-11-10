@@ -337,3 +337,60 @@ body {
     }
 
 }
+
+
+
+#topbar {
+    position: absolute;
+    background-image: url(img/topbar.svg);
+    background-size: 100%;
+    z-index: 6;
+    width: 19vw;
+    height: 3.4vw;
+    left: -5%;
+    top: -1%;
+}
+
+
+
+#besked1 {
+    position: absolute;
+    background-image: url(img/besked_et.svg);
+    background-size: 100%;
+    z-index: 6;
+    width: 6vw;
+    height: 3.2vw;
+    top: 15%;
+    left 4%;
+}
+
+
+
+
+#besked2 {
+
+    position: absolute;
+    background-image: url(img/besked_to.svg);
+    background-size: 100%;
+    z-index: 6;
+    width: 10vw;
+    height: 3.1vw;
+    top: 25.5%;
+    left: 40%;
+
+}
+
+
+#besked3 {
+    position: absolute;
+    background-image: url(img/besked_tre.svg);
+    background-size: 100%;
+    z-index: 6;
+    width: 11vw;
+    height: 4.5vw;
+    top: 38%;
+    left 4%;
+}
+
+
+#besked4 {}
