@@ -24,6 +24,17 @@ body {
     z-index: 1;
 }
 
+#banan {
+     position: absolute;
+    bottom: 20%;
+    left: 40%;
+    width: 8vw;
+    height: 5vw;
+    background-image: url(img/banan_2.png);
+    background-size: 100% 100%;
+    z-index: 16;
+}
+
 #laptop {
     position: absolute;
     bottom: 8.5%;
