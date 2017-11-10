@@ -152,3 +152,24 @@ body {
         background-position: -400% 0%;
     }
 }
+
+/***************************** SCENE 2 **************************/
+
+#scene_2 {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+#baggrund_2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/scene_2_img.svg);
+    background-size: 100% 100%;
+    z-index: 1;
+}
