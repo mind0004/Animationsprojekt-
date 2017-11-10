@@ -195,7 +195,26 @@ body {
     height: 100vw;
     width: 65vw;
     z-index: 1;
+    animation-name: move_kf;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
+
+
+@keyframes move_kf {
+
+    0% {
+        right: -80%;
+        top: 50%;
+    }
+    100% {
+        right: 17%;
+        top: 5%
+    }
+
+}
+
+
 
 #haand_flade_sprite {
     position: absolute;
