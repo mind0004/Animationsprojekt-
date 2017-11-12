@@ -294,7 +294,7 @@ body {
 
 #haand_flade_sprite {
     position: absolute;
-    background-image: url(/img/spritesheet_hand.svg);
+    background-image: url(img/spritesheet_hand.svg);
     background-size: 400% 300%;
     height: 100%;
     width: 100%;
