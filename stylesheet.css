@@ -364,9 +364,21 @@ body {
     height: 3.2vw;
     top: 11%;
     left 4%;
+    animation-name: besked_et_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
 }
 
+@keyframes besked_et_kf {
 
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 2%;
+    }
+}
 
 
 #besked2 {
@@ -380,7 +392,23 @@ body {
     top: 21.5%;
     left: 40%;
 
+    animation-name: besked_to_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+
+
+
+@keyframes besked_to_kf {
+
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
 
 
 #besked3 {
@@ -392,6 +420,23 @@ body {
     height: 4.5vw;
     top: 34%;
     left 4%;
+
+
+    animation-name: besked_tre_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes besked_tre_kf {
+
+    0% {
+        left: -65%;
+    }
+    100% {
+        left: 4%;
+    }
 }
 
 
@@ -404,4 +449,19 @@ body {
     height: 9.8vw;
     top: 51%;
     left 4%;
+
+
+    animation-name: besked_fire_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes besked_fire_kf {
+
+    0% {
+        left: -65%;
+    }
+    100% {
+        left: 4%;
+    }
 }
