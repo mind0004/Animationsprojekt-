@@ -75,6 +75,18 @@ body {
     transform: scale(0.9);
 }
 
+#bog {
+    position: absolute;
+    background-image: url(img/bo.svg);
+    z-index: 10;
+    background-size: 100% 100%;
+    width: 17vw;
+    height: 13vw;
+    left: 24%;
+    top: 70%;
+
+}
+
 #ur {
     position: absolute;
     z-index: 25;
