@@ -218,15 +218,20 @@ body {
     }
 }
 
-#mobil_container {
+#screen {
     position: absolute;
-    background-image: url(img/baggrund_telefon.svg);
-    background-size: 100%;
     width: 17.7vw;
     height: 30.8vw;
     left: 10.9%;
     top: 7.5%;
+}
 
+#mobil_container {
+    position: absolute;
+    background-image: url(img/baggrund_telefon.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
     z-index: 4;
     overflow: hidden;
 }
@@ -234,10 +239,8 @@ body {
 #mobil_container2 {
     position: absolute;
     background-color: #e2e2e2;
-    width: 17.7vw;
-    height: 30.9vw;
-    left: 10.9%;
-    top: 7.5%;
+    width: 100%;
+    height: 100%;
 
     opacity: 0;
     z-index: 5;
@@ -269,7 +272,7 @@ body {
     background-size: 100%;
     width: 10vw;
     height: 3.7vw;
-    top: 40%;
+    top: 39%;
     left: 10%;
     animation-name: slide_ind_kf;
     animation-duration: 1s;
@@ -330,13 +333,14 @@ body {
 
 #topbar {
     position: absolute;
-    background-image: url(img/topbar.svg);
+    background-color: blue;
     background-size: 100%;
     z-index: 6;
     width: 19vw;
-    height: 3.4vw;
-    left: -5%;
-    top: -1%;
+    left: 0;
+    top: 0;
+    height: 3.41vw;
+    margin: 0;
 }
 
 
@@ -431,20 +435,15 @@ body {
     background-image: url(img/besked_fire.svg);
     background-size: 100%;
     z-index: 6;
-<<<<<<< HEAD
     width: 11vw;
     height: 9.8vw;
     top: 51%;
     left 5%;
-=======
     width: 12vw;
     height: 10.96vw;
     top: 52%;
     left 4%;
->>>>>>> origin/master
-
-
-    animation-name: bes ked_fire_kf;
+    animation-name: besked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
