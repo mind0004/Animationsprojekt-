@@ -392,25 +392,9 @@ body {
     width: 6vw;
     height: 3.2vw;
     top: 13%;
-    left 4%;
+    left: 4%;
 
 }
-
-/*.besked1_move {
-    animation-name: besked_et_kf;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes besked_et_kf {
-
-    0% {
-        left: -30%;
-    }
-    100% {
-        left: 2%;
-    }
-}*/
 
 .besked2_startpos {
     top: 23.5%;
@@ -455,9 +439,12 @@ body {
     width: 12vw;
     height: 5vw;
     top: 36%;
-    left 4%;
+    left: -30%;
+}
 
-
+.besked3_move {
+    top: 36%;
+    left: 4%;
     animation-name: besked_tre_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -484,7 +471,7 @@ body {
     width: 12vw;
     height: 10.96vw;
     top: 54%;
-    left 4%;
+    left: 4%;
 
     animation-name: besked_fire_kf;
     animation-duration: 1s;

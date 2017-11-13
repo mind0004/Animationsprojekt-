@@ -46,6 +46,16 @@ function besked2() {
     $("#besked2").removeClass("besked2_startpos");
 
     $("#besked2").addClass("besked2_move");
+
+    $("#besked2").on("animationend", besked3);
+}
+
+function besked3() {
+    console.log("besked3");
+    $("#besked2").off("animationend", besked3);
+
+    $("#besked3").addClass("besked3_move");
+
 }
 
 
