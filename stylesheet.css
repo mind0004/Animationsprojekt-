@@ -495,14 +495,17 @@ body {
 /******* BUTTONS *******/
 
 .btn_start {
-    position: relative;
-    background-color: lawngreen;
-    border-radius: 4px;
+    position: absolute;
+    background-color: #faa05e;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 8vw;
+    border-radius: 10px;
     width: 20vw;
     height: 10vw;
     left: 35%;
     border: 2vw black;
-    outline: 0;
-    font-size: 7vw;
+    font-size: 8vw;
     z-index: 50;
+    top: 40%;
+    color: white;
 }
