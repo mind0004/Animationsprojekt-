@@ -15,7 +15,16 @@ body {
 
 #scene_1 {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
 
+#scene_2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
 }
 
 #baggrund {
@@ -175,14 +184,6 @@ body {
 }
 
 /***************************** SCENE 2 **************************/
-
-#scene_2 {
-    position: relative;
-    width: 100vw;
-    height: 56.25vw;
-    margin: auto;
-    overflow: hidden;
-}
 
 #baggrund_2 {
     position: absolute;
