@@ -56,6 +56,13 @@ function besked3() {
 
     $("#besked3").addClass("besked3_move");
 
+    $("#besked3").on("animationend", besked4);
+}
+
+function besked4() {
+    $("#besked3").on("animationend", besked4);
+
+    $("#besked4").addClass("besked4_move");
 }
 
 

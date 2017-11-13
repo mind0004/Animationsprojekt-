@@ -473,8 +473,10 @@ body {
     width: 12vw;
     height: 10.96vw;
     top: 54%;
-    left: 4%;
+    left: -100%;
+}
 
+.besked4_move {
     animation-name: besked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
