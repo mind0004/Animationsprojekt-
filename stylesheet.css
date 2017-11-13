@@ -49,9 +49,11 @@ body {
     transform: scale(0.9);
 }
 
+/*
 #laptop:hover {
     transform: scale(1);
 }
+*/
 
 #plakat {
     position: absolute;
@@ -203,12 +205,16 @@ body {
 
 #haand_container {
     position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 400% 300%;
     height: 100vw;
     width: 65vw;
     z-index: 1;
     animation-name: move_kf;
     animation-duration: 2s;
     animation-fill-mode: forwards;
+
+
 }
 
 @keyframes move_kf {
@@ -290,15 +296,6 @@ body {
     100% {
         left: 100%;
     }
-}
-
-#haand_flade_sprite {
-    position: absolute;
-    background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;
-    height: 100%;
-    width: 100%;
-    z-index: 3;
 }
 
 #haand_fingre_sprite {
@@ -416,8 +413,8 @@ body {
     background-image: url(img/besked_tre.svg);
     background-size: 100%;
     z-index: 6;
-    width: 11vw;
-    height: 4.5vw;
+    width: 12vw;
+    height: 5vw;
     top: 34%;
     left 4%;
 
@@ -445,10 +442,17 @@ body {
     background-image: url(img/besked_fire.svg);
     background-size: 100%;
     z-index: 6;
+<<<<<<< HEAD
     width: 11vw;
     height: 9.8vw;
     top: 51%;
     left 5%;
+=======
+    width: 12vw;
+    height: 10.96vw;
+    top: 52%;
+    left 4%;
+>>>>>>> origin/master
 
 
     animation-name: bes ked_fire_kf;
