@@ -448,10 +448,10 @@ body {
     width: 11vw;
     height: 9.8vw;
     top: 51%;
-    left 4%;
+    left 5%;
 
 
-    animation-name: besked_fire_kf;
+    animation-name: bes ked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
