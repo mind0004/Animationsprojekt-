@@ -13,6 +13,11 @@ body {
     overflow: hidden;
 }
 
+#scene_1 {
+    position: absolute;
+
+}
+
 #baggrund {
     position: absolute;
     top: 0;
