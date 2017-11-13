@@ -359,12 +359,14 @@ body {
 
 #topbar {
     position: absolute;
+    left: -2%;
+    top: -1%;
     background-image: url(img/topbar.svg);
     background-size: 100%;
     z-index: 6;
-    width: 100%;
+    width: 18.2vw;
 
-    height: 3.7vw;
+    height: 3.2vw;
     margin: 0;
 }
 
