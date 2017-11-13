@@ -101,8 +101,6 @@ body {
 }
 
 .titel_ind {
-    left: 8%;
-    top: -100%;
     animation-name: titel_ind_kf;
     animation-duration: 2.5s;
     animation-delay: 0.2s;
@@ -129,6 +127,30 @@ body {
     100% {
         left: 8%;
         top: 5%;
+    }
+
+}
+
+.titel_ud {
+    animation-name: titel_ud_kf;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titel_ud_kf {
+    0% {
+        left: 8%;
+        top: 5%;
+    }
+
+    30% {
+        left: 8%;
+        top: 9%;
+    }
+
+    100% {
+        left: 8%;
+        top: -100%;
     }
 
 }
@@ -357,10 +379,13 @@ body {
     height: 3.2vw;
     top: 13%;
     left 4%;
+
+}
+
+/*.besked1_move {
     animation-name: besked_et_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-
 }
 
 @keyframes besked_et_kf {
@@ -371,25 +396,30 @@ body {
     100% {
         left: 2%;
     }
+}*/
+
+.besked2_startpos {
+    top: 23.5%;
+    left: 100%;
 }
 
-
 #besked2 {
-
     position: absolute;
     background-image: url(img/besked_to.svg);
     background-size: 100%;
     z-index: 6;
     width: 10vw;
     height: 3.1vw;
-    top: 23.5%;
-    left: 40%;
+}
 
+.besked2_move {
+    top: 23.5%;
+    left: 100%;
     animation-name: besked_to_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
-
 
 
 @keyframes besked_to_kf {
@@ -401,7 +431,6 @@ body {
         left: 40%;
     }
 }
-
 
 
 #besked3 {
@@ -456,4 +485,19 @@ body {
     100% {
         left: 4%;
     }
+}
+
+/******* BUTTONS *******/
+
+.btn_start {
+    position: relative;
+    background-color: lawngreen;
+    border-radius: 4px;
+    width: 20vw;
+    height: 10vw;
+    left: 35%;
+    border: 2vw black;
+    outline: 0;
+    font-size: 7vw;
+    z-index: 50;
 }
