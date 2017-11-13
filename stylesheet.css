@@ -439,10 +439,12 @@ body {
     height: 9.8vw;
     top: 51%;
     left 5%;
+
     width: 12vw;
     height: 10.96vw;
     top: 52%;
     left 4%;
+
     animation-name: besked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
