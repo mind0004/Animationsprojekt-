@@ -43,7 +43,7 @@ function scene2() {
 function besked2() {
     console.log("besked2");
 
-    $("#besked2").removeClass("besked2_startpos");
+    //$("#besked2").removeClass("besked2_startpos");
 
     $("#besked2").addClass("besked2_move");
 
