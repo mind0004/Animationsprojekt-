@@ -566,10 +566,10 @@ body {
     position: relative;
     left: 15vw;
     top: 5vw;
-    height: 17vw;
+    height: 12vw;
     width: 70vw;
     background-color: aqua;
     z-index: 50;
-    font-size: 7vw;
+    font-size: 5vw;
     border: 30px;
 }

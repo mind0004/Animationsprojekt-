@@ -17,6 +17,8 @@ function startSkaerm() {
     $(".btn_billede_er_delt").hide();
     $(".btn_billede_er_delt").off();
 
+    $(".btn_indsaml").hide();
+
     $("#scene_2").hide();
 
     $(".btn_start").show();
