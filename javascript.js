@@ -180,7 +180,12 @@ function moveUp() {
 
     $("#send")[0].play();
     $("#send")[0].volume = 1;
-    //setTimeout(slutTitel, 5000);
+    setTimeout(slutTitel, 3000);
+}
+
+function slutTitel() {
+    console.log("sluttitel");
+
 }
 
 function samleTelefoner() {
@@ -203,6 +208,10 @@ function samleTelefoner() {
     $(".pos6").hide();
     $(".pos7").hide();
     $(".pos8").hide();
+    $(".pos9").hide();
+    $(".pos10").hide();
+    $(".pos11").hide();
+    $(".pos12").hide();
 
     $(".iphone").on("click", samleTelefoner2);
 }
@@ -256,12 +265,13 @@ function samleTelefoner3Check() {
 }
 
 function samleTelefoner4() {
-    console.log("samleTelefoner3");
+    console.log("samleTelefoner4");
 
     $(".iphone").on("click", samleTelefoner4Check);
 }
 
 function samleTelefoner4Check() {
+    console.log("samleTelefoner4Check");
 
     $(".iphone").off("click", samleTelefoner4Check);
 
@@ -271,10 +281,63 @@ function samleTelefoner4Check() {
 
     if (antalTelefoner == 8) {
         console.log("8 telefoner!");
+
+        samleTelefoner5();
+
+        $(".pos1").show();
+        $(".pos2").show();
+        $(".pos3").show();
+        $(".pos5").show();
+        $(".pos6").show();
     } else {
         console.log("der er samlet" + antalTelefoner + " telefoner");
         samleTelefoner4();
     }
+}
+
+function samleTelefoner5() {
+    console.log("samleTelefoner5");
+
+    $(".iphone").on("click", samleTelefoner5Check);
+}
+
+function samleTelefoner5Check() {
+    console.log("samleTelefoner5Check");
+
+    $(".iphone").off("click", samleTelefoner5Check);
+
+    $(this).hide();
+
+    antalTelefoner++;
+
+    if (antalTelefoner == 13) {
+        console.log("13 telefoner!");
+
+        samleTelefoner6();
+
+        $(".pos1").show();
+        $(".pos2").show();
+        $(".pos3").show();
+        $(".pos4").show();
+        $(".pos5").show();
+        $(".pos6").show();
+        $(".pos7").show();
+        $(".pos8").show();
+        $(".pos9").show();
+        $(".pos10").show();
+        $(".pos11").show();
+        $(".pos12").show();
+
+
+    } else {
+        console.log("der er samlet" + antalTelefoner + " telefoner");
+        samleTelefoner5();
+    }
+}
+
+function samleTelefoner6() {
+    console.log("samleTelefoner6");
+
 }
 
 
