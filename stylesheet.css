@@ -187,6 +187,87 @@ body {
     margin-left: 6%;
 }
 
+/*** SLUT TITEL **/
+
+#sluttitel {
+    position: absolute;
+    z-index: 25;
+    background-image: url(img/smartboard2.svg);
+    background-size: 100% 100%;
+    width: 84vw;
+    height: 50vw;
+}
+
+
+.sluttitel_ind {
+    left: 8%;
+    top: -100%;
+    animation-name: sluttitel_ind_kf;
+    animation-duration: 2.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.logo {
+    position: absolute;
+    background-image: url(img/PrivatSnak_logo.svg);
+    background-size: 100% 100%;
+    width: 18vw;
+    height: 12.6vw;
+    left: 68%;
+    top: 60%;
+
+    transform: scale(1);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+
+}
+
+#sluttitel h2 {
+    position: absolute;
+    font-size: 4vw;
+    color: #202532;
+    top: 70%;
+    left: 5%;
+}
+
+@keyframes sluttitel_ind_kf {
+    0% {
+        left: 8%;
+        top: -100%;
+    }
+
+    30% {
+        left: 8%;
+        top: 9%;
+    }
+
+    65% {
+        left: 8%;
+        top: 5%;
+    }
+
+
+    100% {
+        left: 8%;
+        top: 5%;
+    }
+}
+
+
+.sluttitel_start_pos {
+    left: 8%;
+    top: -100%;
+}
+
+#sluttitel p {
+    margin-left: 6%;
+}
+
 
 /**** KARAKTERERE ***/
 
@@ -371,6 +452,12 @@ body {
 }
 
 
+/*
+.haand_lock_screen {
+
+
+}
+*/
 
 #topbar {
     position: absolute;

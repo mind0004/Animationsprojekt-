@@ -181,11 +181,20 @@ function moveUp() {
 
     $("#send")[0].play();
     $("#send")[0].volume = 1;
-    setTimeout(slutTitel, 3000);
+    setTimeout(lockScreen, 1500);
+}
+
+function lockScreen() {
+    console.log("lockScreen");
+
+    setTimeout(slutTitel, 1500);
 }
 
 function slutTitel() {
     console.log("sluttitel");
+
+    $("#sluttitel").removeClass("sluttitel_start_pos");
+    $("#sluttitel").addClass("sluttitel_ind");
 
 }
 
