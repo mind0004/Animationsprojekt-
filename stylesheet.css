@@ -702,6 +702,26 @@ body {
     left: 5%;
 }
 
+.pos9 {
+    top: 70%;
+    left: 60vw;
+}
+
+.pos10 {
+    top: 60%;
+    left: 90%;
+}
+
+.pos11 {
+    top: 30%;
+    left: 45%;
+}
+
+.pos12 {
+    top: 5%;
+    left: 90%;
+}
+
 /******* BUTTONS *******/
 
 .btn_start {
