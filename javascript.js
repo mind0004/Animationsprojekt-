@@ -136,37 +136,51 @@ function samleTelefoner() {
     $(".pos7").hide();
     $(".pos8").hide();
 
-    $(".pos1").on("click", samleTelefoner2);
+    $(".iphone").on("click", samleTelefoner2);
 }
 
 function samleTelefoner2() {
     console.log("samleTelefoner2");
-    $(".pos1").off("click", samleTelefoner2);
+    $(".iphone").off("click", samleTelefoner2);
 
     $(".pos1").hide();
 
     $(".pos2").show();
 
-    $(".pos2").on("click", samleTelefoner3);
+    $(".iphone").on("click", samleTelefoner2Check);
 }
 
-function samleTelefoner3() {
-    console.log("samleTelefoner3");
-    $(".pos2").off("click", samleTelefoner3);
+function samleTelefoner2Check() {
+    $(".iphone").off("click", samleTelefoner2Check);
 
     $(".pos2").hide();
 
     $(".pos3").show();
     $(".pos4").show();
 
+    samleTelefoner3();
+}
+
+function samleTelefoner3() {
+    console.log("samleTelefoner3");
+
+    $(".iphone").on("click", samleTelefoner3Check);
+}
+
+function samleTelefoner3Check() {
+    $(".iphone").off("click", samleTelefoner3Check);
+
     $(this).hide();
 
     antalTelefoner++;
 
-    if (antalTelefoner = 4) {
-        console.log("4!");
-        erDerSamletTuborg = true;
+    if (antalTelefoner == 4) {
+        console.log("4 telefoner!");
         samleTelefoner4();
+        $(".pos5").show();
+        $(".pos6").show();
+        $(".pos7").show();
+        $(".pos8").show();
     } else {
         console.log("der er samlet" + antalTelefoner + " telefoner");
         samleTelefoner3();
@@ -176,11 +190,23 @@ function samleTelefoner3() {
 function samleTelefoner4() {
     console.log("samleTelefoner3");
 
-    $(".pos5").show();
-    $(".pos6").show();
-    $(".pos7").show();
-    $(".pos8").show();
+    $(".iphone").on("click", samleTelefoner4Check);
+}
 
+function samleTelefoner4Check() {
+
+    $(".iphone").off("click", samleTelefoner4Check);
+
+    $(this).hide();
+
+    antalTelefoner++;
+
+    if (antalTelefoner == 8) {
+        console.log("8 telefoner!");
+    } else {
+        console.log("der er samlet" + antalTelefoner + " telefoner");
+        samleTelefoner4();
+    }
 }
 
 
