@@ -40,11 +40,24 @@ function startHistorie() {
     $("#titel").addClass("titel_ud");
 
     $("#titel").on("animationend", scene1);
+
+    //    $("#blablabla")[0].play();
+    //    $("#blablabla")[0].volume = 1;
+
+    $("#vibration")[0].play();
+    $("#vibration")[0].volume = 1;
+
+    $("#modtag")[0].play();
+    $("#modtag")[0].volume = 1;
+
 }
+
+
+
+
 
 function scene1() {
     console.log("scene1");
-
 
 
     setTimeout(scene2, 500);
@@ -54,6 +67,10 @@ function scene2() {
     console.log("scene2");
 
     $("#scene_2").show();
+
+    setTimeout(function () {
+        new Audio('sound/unlock.mp3').play();
+    }, 2000);
 
     setTimeout(besked2, 4000);
 }
@@ -66,6 +83,10 @@ function besked2() {
     $("#besked2").addClass("besked2_move");
 
     $("#besked2").on("animationend", besked3);
+
+
+    $("#send")[0].play();
+    $("#send")[0].volume = 1;
 }
 
 function besked3() {
@@ -75,6 +96,9 @@ function besked3() {
     $("#besked3").addClass("besked3_move");
 
     $("#besked3").on("animationend", besked4);
+
+    $("#modtag2")[0].play();
+    $("#modtag2")[0].volume = 0.2;
 }
 
 function besked4() {
@@ -83,6 +107,9 @@ function besked4() {
     $("#besked4").addClass("besked4_move");
 
     $("#besked4").on("animationend", valg);
+
+    $("#modtag2")[0].play();
+    $("#modtag2")[0].volume = 0.2;
 }
 
 function valg() {

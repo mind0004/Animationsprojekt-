@@ -771,9 +771,9 @@ body {
 }
 
 .btn_indsaml {
-    position: relative;
+    position: absolute;
     left: 16%;
-    top: 2%;
+    top: 3%;
     height: 9vw;
     width: 70vw;
     background-color: #f4912d;
@@ -784,4 +784,12 @@ body {
     color: white;
     font-family: 'roboto', sans-serif;
 
+}
+
+
+
+/*********** LYD **************/
+
+#lyd {
+    display: none;
 }
