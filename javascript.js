@@ -44,11 +44,10 @@ function startHistorie() {
     //    $("#blablabla")[0].play();
     //    $("#blablabla")[0].volume = 1;
 
-    $("#vibration")[0].play();
-    $("#vibration")[0].volume = 1;
+    /*$("#vibration")[0].play();
+    $("#vibration")[0].volume = 1;*/
 
-    $("#modtag")[0].play();
-    $("#modtag")[0].volume = 1;
+
 
 }
 
@@ -177,6 +176,8 @@ function moveUp() {
     $("#besked5").removeClass("besked5_startpos");
     $("#besked5").addClass("besked5_ind");
 
+    $("#send")[0].play();
+    $("#send")[0].volume = 1;
     //setTimeout(slutTitel, 5000);
 }
 
