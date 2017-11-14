@@ -414,7 +414,7 @@ body {
     animation-name: besked_to_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    /*    animation-delay: 2s;*/
 }
 
 
@@ -445,7 +445,7 @@ body {
     animation-name: besked_tre_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    /*    animation-delay: 3s;*/
     /*animation-iteration-count: infinite; */
 }
 
@@ -477,6 +477,7 @@ body {
     animation-name: besked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    /*    animation-delay: 1s;*/
 }
 
 @keyframes besked_fire_kf {
@@ -546,4 +547,28 @@ body {
     outline: 0;
     font-size: 4vw;
     z-index: 50;
+}
+
+.btn_billede_er_delt {
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+    height: 17vw;
+    width: 70vw;
+    background-color: aqua;
+    z-index: 50;
+    font-size: 7vw;
+    border: 30px;
+}
+
+.btn_indsaml {
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+    height: 17vw;
+    width: 70vw;
+    background-color: aqua;
+    z-index: 50;
+    font-size: 7vw;
+    border: 30px;
 }

@@ -14,6 +14,9 @@ function startSkaerm() {
 
     $(".hvadvildugoere").hide();
 
+    $(".btn_billede_er_delt").hide();
+    $(".btn_billede_er_delt").off();
+
     $("#scene_2").hide();
 
     $(".btn_start").show();
@@ -83,6 +86,37 @@ function valg() {
     $(".btn_del_ikke").show();
 
     $(".hvadvildugoere").show();
+
+    $(".btn_del").on("click", deltBillede);
+}
+
+function deltBillede() {
+    console.log("deltBillede");
+    $(".btn_del").off("click", deltBillede);
+
+    $(".btn_del").off();
+    $(".btn_del").hide();
+
+    $(".btn_del_ikke").off();
+    $(".btn_del_ikke").hide();
+
+    $(".hvadvildugoere").hide();
+
+    $(".btn_billede_er_delt").show();
+    $(".btn_billede_er_delt").on();
+
+    $(".btn_billede_er_delt").on("click", samleTelefoner);
+}
+
+function samleTelefoner() {
+    console.log("samleTelefoner");
+
+    $(".btn_billede_er_delt").off("click", samleTelefoner);
+
+    $(".btn_billede_er_delt").hide();
+    $(".btn_billede_er_delt").off();
+
+    $(".btn_indsaml").show();
 }
 
 
