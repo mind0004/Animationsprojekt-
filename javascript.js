@@ -6,6 +6,14 @@ function startSkaerm() {
     $("#titel").addClass("titel_start_pos");
     $("#titel").addClass("titel_ind");
 
+    $(".btn_del").off();
+    $(".btn_del").hide();
+
+    $(".btn_del_ikke").off();
+    $(".btn_del_ikke").hide();
+
+    $(".hvadvildugoere").hide();
+
     $("#scene_2").hide();
 
     $(".btn_start").show();
@@ -63,6 +71,18 @@ function besked4() {
     $("#besked3").on("animationend", besked4);
 
     $("#besked4").addClass("besked4_move");
+
+    $("#besked4").on("animationend", valg);
+}
+
+function valg() {
+    $(".btn_del").on();
+    $(".btn_del").show();
+
+    $(".btn_del_ikke").on();
+    $(".btn_del_ikke").show();
+
+    $(".hvadvildugoere").show();
 }
 
 
