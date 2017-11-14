@@ -113,6 +113,10 @@ function besked4() {
 }
 
 function valg() {
+    console.log("Valg");
+
+    $("#besked4").off("animationend", valg);
+
     $(".btn_del").on();
     $(".btn_del").show();
 
@@ -149,14 +153,31 @@ function deltBillede() {
 function moveUp() {
     console.log("beskeder_up");
 
-    $(".btn_del").off("click", deltBillede);
+    $(".btn_del_ikke").off("click", moveUp);
 
+    $(".btn_del").off();
+    $(".btn_del").hide();
+
+    $(".btn_del_ikke").off();
+    $(".btn_del_ikke").hide();
+
+    $(".hvadvildugoere").hide();
+
+    $("#besked1").removeClass("");
     $("#besked2").removeClass("besked2_move");
+    $("#besked3").removeClass("besked3_move");
+    $("#besked4").removeClass("besked4_move");
+    $("#besked5").removeClass("besked5_move");
 
     $("#besked1").addClass("besked1_up");
     $("#besked2").addClass("besked2_up");
     $("#besked3").addClass("besked3_up");
     $("#besked4").addClass("besked4_up");
+
+    $("#besked5").removeClass("besked5_startpos");
+    $("#besked5").addClass("besked5_ind");
+
+    //setTimeout(slutTitel, 5000);
 }
 
 function samleTelefoner() {
