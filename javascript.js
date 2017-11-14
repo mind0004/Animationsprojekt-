@@ -1,3 +1,5 @@
+var antalTelefoner = 2;
+
 $(window).on("load", startSkaerm);
 
 function startSkaerm() {
@@ -18,6 +20,9 @@ function startSkaerm() {
     $(".btn_billede_er_delt").off();
 
     $(".btn_indsaml").hide();
+
+    $(".telefon_container").hide();
+    $(".telefon_container").off();
 
     $("#scene_2").hide();
 
@@ -119,8 +124,88 @@ function samleTelefoner() {
     $(".btn_billede_er_delt").off();
 
     $(".btn_indsaml").show();
+
+    $(".telefon_container").show();
+    $(".telefon_container").on();
+
+    $(".pos2").hide();
+    $(".pos3").hide();
+    $(".pos4").hide();
+    $(".pos5").hide();
+    $(".pos6").hide();
+    $(".pos7").hide();
+    $(".pos8").hide();
+
+    $(".pos1").on("click", samleTelefoner2);
+}
+
+function samleTelefoner2() {
+    console.log("samleTelefoner2");
+    $(".pos1").off("click", samleTelefoner2);
+
+    $(".pos1").hide();
+
+    $(".pos2").show();
+
+    $(".pos2").on("click", samleTelefoner3);
+}
+
+function samleTelefoner3() {
+    console.log("samleTelefoner3");
+    $(".pos2").on("click", samleTelefoner3);
+
+    $(".pos2").hide();
+
+    $(".pos3").show();
+    $(".pos4").show();
+
+    $(this).hide();
+
+    antalTelefoner++;
+
+    if (antalTelefoner = 4) {
+        console.log("Der er samlet 10 tuborg!");
+        erDerSamletTuborg = true;
+        samleTelefoner4();
+    } else {
+        console.log("der er samlet" + antalTelefoner + " telefoner");
+        samleTelefoner3();
+    }
+}
+
+function samleTelefoner4() {
+    console.log("samleTelefoner3");
+
+    $(".pos5").show();
+    $(".pos6").show();
+    $(".pos7").show();
+    $(".pos8").show();
+
 }
 
 
 
 /*******************************/
+
+
+//
+
+
+
+
+
+
+
+
+
+///
+
+
+
+//
+
+
+///
+
+
+//
