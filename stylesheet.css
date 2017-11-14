@@ -378,7 +378,7 @@ body {
     top: -1%;
     background-image: url(img/topbar.svg);
     background-size: 100%;
-    z-index: 6;
+    z-index: 7;
     width: 18.2vw;
 
     height: 3.2vw;
@@ -396,6 +396,27 @@ body {
     height: 3.2vw;
     top: 12%;
     left: 4%;
+}
+
+.besked1_up {
+    top: 12%;
+    left: 4%;
+    animation-name: besked1_up_kf;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    /*    animation-delay: 2s;*/
+}
+
+@keyframes besked1_up_kf {
+
+    0% {
+        top: 12%;
+        left: 4%;
+    }
+    100% {
+        top: -1%;
+        left: 4%;
+    }
 }
 
 #besked2 {
@@ -417,7 +438,6 @@ body {
     /*    animation-delay: 2s;*/
 }
 
-
 @keyframes besked_to_kf {
 
     0% {
@@ -427,6 +447,28 @@ body {
         left: 40%;
     }
 }
+
+.besked2_up {
+    top: 24.5%;
+    left: 40%;
+    animation-name: besked2_up_kf;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    /*    animation-delay: 2s;*/
+}
+
+@keyframes besked2_up_kf {
+
+    0% {
+        top: 24.5%;
+        left: 40%;
+    }
+    100% {
+        top: 12%;
+        left: 40%;
+    }
+}
+
 
 
 #besked3 {
@@ -450,13 +492,33 @@ body {
 }
 
 
-
 @keyframes besked_tre_kf {
 
     0% {
         left: -65%;
     }
     100% {
+        left: 4%;
+    }
+}
+
+.besked3_up {
+    top: 37%;
+    left: 4%;
+    animation-name: besked3_up_kf;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    /*    animation-delay: 2s;*/
+}
+
+@keyframes besked3_up_kf {
+
+    0% {
+        top: 37%;
+        left: 4%;
+    }
+    100% {
+        top: 25%;
         left: 4%;
     }
 }
@@ -486,6 +548,27 @@ body {
         left: -65%;
     }
     100% {
+        left: 4%;
+    }
+}
+
+.besked4_up {
+    top: 55.5%;
+    left: 4%;
+    animation-name: besked4_up_kf;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    /*    animation-delay: 2s;*/
+}
+
+@keyframes besked4_up_kf {
+
+    0% {
+        top: 55.5%;
+        left: 4%;
+    }
+    100% {
+        top: 44.5%;
         left: 4%;
     }
 }

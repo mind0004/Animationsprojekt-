@@ -120,12 +120,16 @@ function deltBillede() {
 
 
 function moveUp() {
-    console.log("moveup");
+    console.log("beskeder_up");
 
-    $("#besked1").addClass("move_up");
-    $("#besked2").addClass("move_up");
-    $("#besked3").addClass("move_up");
-    $("#besked4").addClass("move_up");
+    $(".btn_del").off("click", deltBillede);
+
+    $("#besked2").removeClass("besked2_move");
+
+    $("#besked1").addClass("besked1_up");
+    $("#besked2").addClass("besked2_up");
+    $("#besked3").addClass("besked3_up");
+    $("#besked4").addClass("besked4_up");
 }
 
 function samleTelefoner() {
