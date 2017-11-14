@@ -152,7 +152,7 @@ function samleTelefoner2() {
 
 function samleTelefoner3() {
     console.log("samleTelefoner3");
-    $(".pos2").on("click", samleTelefoner3);
+    $(".pos2").off("click", samleTelefoner3);
 
     $(".pos2").hide();
 
@@ -164,7 +164,7 @@ function samleTelefoner3() {
     antalTelefoner++;
 
     if (antalTelefoner = 4) {
-        console.log("Der er samlet 10 tuborg!");
+        console.log("4!");
         erDerSamletTuborg = true;
         samleTelefoner4();
     } else {
