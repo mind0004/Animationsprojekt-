@@ -44,8 +44,9 @@ function startHistorie() {
     //    $("#blablabla")[0].play();
     //    $("#blablabla")[0].volume = 1;
 
-    /*$("#vibration")[0].play();
-    $("#vibration")[0].volume = 1;*/
+    setTimeout(function () {
+        new Audio('sound/vibration.mp3').play();
+    }, 1000);
 
 
 
