@@ -41,19 +41,19 @@ function startHistorie() {
 
     $("#titel").on("animationend", scene1);
 
-    //    $("#blablabla")[0].play();
-    //    $("#blablabla")[0].volume = 1;
+    $("#blablabla")[0].play();
+    $("#blablabla")[0].volume = 0.1;
+
+    $("#baggrundslyd")[0].play();
+    $("#baggrundslyd")[0].volume = 0.5;
+
+
+
 
     setTimeout(function () {
         new Audio('sound/vibration.mp3').play();
     }, 1000);
-
-
-
 }
-
-
-
 
 
 function scene1() {
@@ -102,7 +102,7 @@ function besked3() {
 }
 
 function besked4() {
-    $("#besked3").on("animationend", besked4);
+    $("#besked3").off("animationend", besked4);
 
     $("#besked4").addClass("besked4_move");
 
@@ -152,6 +152,7 @@ function deltBillede() {
 
 function moveUp() {
     console.log("beskeder_up");
+    $("#besked4").off("animationend", valg);
 
     $(".btn_del_ikke").off("click", moveUp);
 
@@ -278,26 +279,6 @@ function samleTelefoner4Check() {
 
 
 /*******************************/
-
-
-//
-
-
-
-
-
-
-
-
-
-///
-
-
-
-//
-
-
-///
 
 
 //
