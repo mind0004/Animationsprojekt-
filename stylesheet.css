@@ -494,11 +494,12 @@ body {
     position: relative;
     left: 53vw;
     top: 2vw;
-    height: 16vw;
-    width: 34vw;
+    height: 18vw;
+    width: 40vw;
     background-color: aqua;
     z-index: 50;
     font-size: 7vw;
+    border: 30px;
 }
 
 /******* BUTTONS *******/
