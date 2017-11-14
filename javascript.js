@@ -42,10 +42,10 @@ function startHistorie() {
     $("#titel").on("animationend", scene1);
 
     $("#blablabla")[0].play();
-    $("#blablabla")[0].volume = 0.1;
+    $("#blablabla")[0].volume = 0.5;
 
     $("#baggrundslyd")[0].play();
-    $("#baggrundslyd")[0].volume = 0.5;
+    $("#baggrundslyd")[0].volume = 0.3;
 
 
 
@@ -67,6 +67,7 @@ function scene2() {
     console.log("scene2");
 
     $("#scene_2").show();
+    $("#blablabla")[0].volume = 0.1;
 
     setTimeout(function () {
         new Audio('sound/unlock.mp3').play();
