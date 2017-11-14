@@ -178,7 +178,12 @@ function moveUp() {
 
     $("#send")[0].play();
     $("#send")[0].volume = 1;
-    //setTimeout(slutTitel, 5000);
+    setTimeout(slutTitel, 3000);
+}
+
+function slutTitel() {
+    console.log("sluttitel");
+
 }
 
 function samleTelefoner() {
