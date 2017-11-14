@@ -130,6 +130,9 @@ function moveUp() {
     $("#besked2").addClass("besked2_up");
     $("#besked3").addClass("besked3_up");
     $("#besked4").addClass("besked4_up");
+
+    $("#besked5").removeClass("besked5_startpos");
+    $("#besked5").addClass("besked5_ind");
 }
 
 function samleTelefoner() {
