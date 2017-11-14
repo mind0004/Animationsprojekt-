@@ -505,8 +505,26 @@ body {
     font-family: 'roboto', sans-serif;
     color: black;
     text-align: center;
+}
+
+.move_up {
+    padding-top: 0;
+    animation-delay: 1s;
+    animation-name: move_up_kf;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
 
 
+@keyframes move_up_kf {
+    0% {
+        padding-top: 0;
+    }
+
+    100% {
+        padding-top: -20%;
+    }
 }
 
 /****** TELEFONER INDSAMLING *******/

@@ -95,7 +95,10 @@ function valg() {
     $(".hvadvildugoere").show();
 
     $(".btn_del").on("click", deltBillede);
+    $(".btn_del_ikke").on("click", moveUp);
+
 }
+
 
 function deltBillede() {
     console.log("deltBillede");
@@ -113,6 +116,16 @@ function deltBillede() {
     $(".btn_billede_er_delt").on();
 
     $(".btn_billede_er_delt").on("click", samleTelefoner);
+}
+
+
+function moveUp() {
+    console.log("moveup");
+
+    $("#besked1").addClass("move_up");
+    $("#besked2").addClass("move_up");
+    $("#besked3").addClass("move_up");
+    $("#besked4").addClass("move_up");
 }
 
 function samleTelefoner() {
@@ -182,8 +195,6 @@ function samleTelefoner4() {
     $(".pos8").show();
 
 }
-
-
 
 
 /*******************************/
