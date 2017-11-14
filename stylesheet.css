@@ -493,14 +493,20 @@ body {
 
 .hvadvildugoere {
     position: relative;
-    left: 53vw;
-    top: 2vw;
-    height: 18vw;
-    width: 40vw;
-    background-color: aqua;
+    left: 54vw;
+    top: 10vw;
+    height: 8vw;
+    width: 35vw;
+    background-color: #e9eced;
     z-index: 50;
-    font-size: 7vw;
-    border: 30px;
+    font-size: 3.4vw;
+    border-radius: 20px;
+    line-height: 2.5;
+    font-family: 'roboto', sans-serif;
+    color: black;
+    text-align: center;
+
+
 }
 
 /******* BUTTONS *******/
@@ -508,7 +514,7 @@ body {
 .btn_start {
     position: absolute;
     background-color: #f4912d;
-    font-family: 'Futura', sans-serif;
+    font-family: 'roboto', sans-serif;
     font-size: 8vw;
     border-radius: 10px;
     width: 20vw;
@@ -520,56 +526,100 @@ body {
     top: 40%;
     color: white;
     line-height: 1;
+    transition: all 0.4s ease;
+}
+
+.btn_start:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+
+
 }
 
 .btn_del {
     position: absolute;
-    background-color: lawngreen;
-    border-radius: 4px;
+    background-color: #202532;
+    border-radius: 20px;
     width: 20vw;
     height: 8vw;
-    left: 60%;
+    left: 61%;
     top: 40%;
-    border: 2vw black;
     outline: 0;
-    font-size: 4vw;
+    font-size: 3.4vw;
     z-index: 50;
+    color: white;
+
+    border: none;
+    transition: all 0.4s ease;
+
+
+}
+
+.btn_del:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .btn_del_ikke {
     position: absolute;
-    background-color: lawngreen;
-    border-radius: 4px;
+    background-color: #f4912d;
+    border-radius: 20px;
     width: 20vw;
     height: 8vw;
-    left: 60%;
+    left: 61%;
     top: 60%;
-    border: 2vw black;
     outline: 0;
-    font-size: 4vw;
+    font-size: 3.4vw;
     z-index: 50;
+    color: white;
+
+    border: none;
+    font-family: 'roboto', sans-serif;
+    transition: all 0.4s ease;
+
+
+}
+
+.btn_del_ikke:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .btn_billede_er_delt {
     position: relative;
-    left: 15vw;
-    top: 5vw;
-    height: 17vw;
-    width: 70vw;
-    background-color: aqua;
+    left: 58%;
+    top: 40%;
+    height: 9vw;
+    width: 40vw;
+    background-color: #f4912d;
     z-index: 50;
-    font-size: 7vw;
+    font-size: 3.4vw;
     border: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-family: 'roboto', sans-serif;
+    transition: all 0.4s ease;
+
+}
+
+.btn_billede_er_delt:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .btn_indsaml {
     position: relative;
-    left: 15vw;
-    top: 5vw;
-    height: 12vw;
+    left: 16%;
+    top: 2%;
+    height: 9vw;
     width: 70vw;
-    background-color: aqua;
+    background-color: #f4912d;
     z-index: 50;
-    font-size: 5vw;
+    font-size: 3.8vw;
     border: 30px;
+    border-radius: 20px;
+    color: white;
+    font-family: 'roboto', sans-serif;
+
 }
