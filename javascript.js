@@ -398,26 +398,17 @@ function samleTelefoner6() {
     $(".pos11").addClass("pos11_moveout");
     $(".pos12").addClass("pos12_moveout");
 
-    $(".pos12").on("animationend", slutTitel2);
+    $(".pos12").on("animationend", haandNed);
 }
 
 
-function slutTitel2() {
-    console.log("sluttitel");
-    $(".pos12").off("animationend", slutTitel2);
+function haandNed() {
 
-    $("#logo").removeClass("hide_logo");
-    $("#logo").addClass("show_logo");
-
-    $("#sluttitel2").show();
-    $("#haand_container").removeClass("haand_move");
+    $(".pos12").off("animationend", haandNed);
     $("#haand_container").addClass("haand_move_down");
 
-    $("#sluttitel2").removeClass("sluttitel_start_pos2");
-    $("#sluttitel2").addClass("sluttitel_ind");
-    $("#baggrundslyd")[0].pause();
+    slutTitel();
 }
-
 
 
 /*******************************/

@@ -211,16 +211,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-#sluttitel2 {
-    position: absolute;
-    z-index: 20;
-    background-color: #333333;
-    background-image: url(img/titelslut.svg);
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100%;
-}
-
 #logo {
     position: absolute;
     z-index: 27;
@@ -291,14 +281,6 @@ body {
 #replay_btn:hover {
     transform: scale(1.4);
     cursor: pointer;
-}
-
-#sluttitel2 h2 {
-    position: absolute;
-    font-size: 4vw;
-    color: white;
-    top: 5%;
-    left: 5%;
 }
 
 
