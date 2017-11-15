@@ -362,16 +362,16 @@ body {
 
 #screen {
     position: absolute;
-    width: 17.7vw;
-    height: 30.8vw;
-    left: 10.9%;
-    top: 7.5%;
+    width: 17.8vw;
+    height: 30.9vw;
+    left: 10.8%;
+    top: 7.1%;
 }
 
 #mobil_container {
     position: absolute;
     background-image: url(img/baggrund_telefon.svg);
-    background-size: 100%;
+    background-size: 100% 100%;
     width: 100%;
     height: 100%;
     z-index: 4;
@@ -419,7 +419,7 @@ body {
     animation-name: slide_ind_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s
+    animation-delay: 2.9s
 }
 
 @keyframes slide_ind_kf {
@@ -451,11 +451,11 @@ body {
     width: 100%;
     background-position: 0% 250%;
     animation-name: thumb_kf;
-    animation-duration: .3s;
+    animation-duration: .4s;
     animation-iteration-count: 1;
     animation-timing-function: steps(4);
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
 
     z-index: 5;
 }
@@ -498,12 +498,12 @@ body {
 
 #topbar {
     position: absolute;
-    left: -2%;
+    left: -1.1%;
     top: -1%;
     background-image: url(img/topbar.svg);
     background-size: 100%;
     z-index: 7;
-    width: 18.2vw;
+    width: 18.7vw;
 
     height: 3.2vw;
     margin: 0;
@@ -665,6 +665,7 @@ body {
     animation-fill-mode: forwards;
     /*    animation-delay: 1s;*/
 }
+
 
 @keyframes besked_fire_kf {
     0% {
