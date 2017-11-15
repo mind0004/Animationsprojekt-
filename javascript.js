@@ -7,7 +7,6 @@ function startSkaerm() {
 
     $("#titel").addClass("titel_start_pos");
     $("#titel").addClass("titel_ind");
-    $("#godven").hide();
 
     $(".btn_del").off();
     $(".btn_del").hide();
@@ -21,7 +20,6 @@ function startSkaerm() {
     $(".btn_billede_er_delt").off();
 
     $(".btn_indsaml").hide();
-
 
     $(".telefon_container").hide();
     $(".telefon_container").off();
@@ -207,24 +205,15 @@ function lockScreen() {
     $("#lock")[0].play();
     $("#lock")[0].volume = 1;
 
-    setTimeout(godven, 1500);
+
+
+    setTimeout(slutTitel, 1500);
 }
-
-
-
-function godven() {
-    console.log("Godven");
-    $("#godven").show();
-
-    setTimeout(slutTitel, 2000);
-
-}
-
 
 function slutTitel() {
     console.log("sluttitel");
 
-    $("#godven").hide();
+    $(".pos12").off("animationend", samleTelefoner6);
 
 
     $("#logo").removeClass("hide_logo");
@@ -254,6 +243,10 @@ function replayButton() {
 function samleTelefoner() {
     console.log("samleTelefoner");
 
+    $(".iphone").addClass(".iphone_pulse");
+
+    $("#haand_container").addClass("haand_move_down");
+
     $(".btn_billede_er_delt").off("click", samleTelefoner);
 
     $(".btn_billede_er_delt").hide();
@@ -277,38 +270,21 @@ function samleTelefoner() {
     $(".pos12").hide();
 
     $(".iphone").on("click", samleTelefoner2);
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
 }
 
 function samleTelefoner2() {
     console.log("samleTelefoner2");
     $(".iphone").off("click", samleTelefoner2);
 
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
     $(".pos1").hide();
 
     $(".pos2").show();
-    $(".btn_indsaml").hide();
-
 
     $(".iphone").on("click", samleTelefoner2Check);
 }
 
 function samleTelefoner2Check() {
     $(".iphone").off("click", samleTelefoner2Check);
-
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
 
     $(".pos2").hide();
 
@@ -322,13 +298,6 @@ function samleTelefoner3() {
     console.log("samleTelefoner3");
 
     $(".iphone").on("click", samleTelefoner3Check);
-
-
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
 }
 
 function samleTelefoner3Check() {
@@ -355,11 +324,6 @@ function samleTelefoner4() {
     console.log("samleTelefoner4");
 
     $(".iphone").on("click", samleTelefoner4Check);
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
 }
 
 function samleTelefoner4Check() {
@@ -390,10 +354,6 @@ function samleTelefoner4Check() {
 function samleTelefoner5() {
     console.log("samleTelefoner5");
 
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
     $(".iphone").on("click", samleTelefoner5Check);
 }
 
@@ -401,10 +361,6 @@ function samleTelefoner5Check() {
     console.log("samleTelefoner5Check");
 
     $(".iphone").off("click", samleTelefoner5Check);
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
 
     $(this).hide();
 
@@ -427,6 +383,7 @@ function samleTelefoner5Check() {
         $(".pos10").show();
         $(".pos11").show();
         $(".pos12").show();
+        $(".btn_indsaml").hide();
 
 
     } else {
@@ -437,12 +394,6 @@ function samleTelefoner5Check() {
 
 function samleTelefoner6() {
     console.log("samleTelefoner6");
-
-
-
-    $("#plob")[0].play();
-    $("#plob")[0].volume = 1;
-
 
     $(".pos1").addClass("pos1_moveout");
     $(".pos2").addClass("pos2_moveout");
@@ -457,16 +408,7 @@ function samleTelefoner6() {
     $(".pos11").addClass("pos11_moveout");
     $(".pos12").addClass("pos12_moveout");
 
-    $(".pos12").on("animationend", haandNed);
-}
-
-
-function haandNed() {
-
-    $(".pos12").off("animationend", haandNed);
-    $("#haand_container").addClass("haand_move_down");
-
-    slutTitel();
+    $(".pos12").on("animationend", slutTitel);
 }
 
 
