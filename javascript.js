@@ -55,7 +55,7 @@ function startHistorie() {
 
     setTimeout(function () {
         new Audio('sound/vibration.mp3').play();
-    }, 1000);
+    }, 3000);
 }
 
 
@@ -63,7 +63,7 @@ function scene1() {
     console.log("scene1");
 
 
-    setTimeout(scene2, 500);
+    setTimeout(scene2, 3000);
 }
 
 function scene2() {
@@ -90,9 +90,9 @@ function besked2() {
 
     $("#besked2").on("animationend", besked3);
 
-
-    $("#send")[0].play();
-    $("#send")[0].volume = 1;
+    setTimeout(function () {
+        $("#send")[0].play()
+    }, 2000);
 }
 
 function besked3() {
@@ -103,8 +103,10 @@ function besked3() {
 
     $("#besked3").on("animationend", besked4);
 
-    $("#modtag2")[0].play();
-    $("#modtag2")[0].volume = 0.2;
+    setTimeout(function () {
+        $("#modtag2")[0].play();
+        $("#modtag2")[0].volume = 0.2;
+    }, 2000);
 }
 
 function besked4() {
@@ -114,8 +116,10 @@ function besked4() {
 
     $("#besked4").on("animationend", valg);
 
-    $("#modtag2")[0].play();
-    $("#modtag2")[0].volume = 0.2;
+    setTimeout(function () {
+        $("#modtag2")[0].play();
+        $("#modtag2")[0].volume = 0.2;
+    }, 1000);
 }
 
 function valg() {
