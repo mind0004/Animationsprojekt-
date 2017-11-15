@@ -850,14 +850,15 @@ span {
     animation-iteration-count: infinite;
 }
 
+
 @keyframes godven_kf {
     0‰ {
-        left: 0;
+        opacity: 0;
         transform: scale(1);
     }
 
     100‰ {
-        left: 10%;
+        opacity: 1;
         transform: scale(2);
     }
 }
