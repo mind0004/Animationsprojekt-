@@ -400,6 +400,9 @@ function slutTitel2() {
     console.log("sluttitel");
     $(".pos12").off("animationend", slutTitel2);
 
+    $("#logo").removeClass("hide_logo");
+    $("#logo").addClass("show_logo");
+
     $("#sluttitel2").show();
     $("#haand_container").removeClass("haand_move");
     $("#haand_container").addClass("haand_move_down");
