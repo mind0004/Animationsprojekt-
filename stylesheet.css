@@ -361,6 +361,9 @@ body {
     height: 100vw;
     width: 65vw;
     z-index: 1;
+}
+
+.haand_move {
     animation-name: move_kf;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -375,6 +378,24 @@ body {
     100% {
         right: 17%;
         top: 5%
+    }
+}
+
+.haand_move_down {
+    animation-name: move_down_kf;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move_down_kf {
+
+    0% {
+        right: 17%;
+        top: 5%
+    }
+    100% {
+        right: 17%;
+        top: 100%
     }
 }
 

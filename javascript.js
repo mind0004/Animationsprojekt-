@@ -66,6 +66,8 @@ function scene1() {
 function scene2() {
     console.log("scene2");
 
+    $("#haand_container").addClass("haand_move");
+
     $("#scene_2").show();
     $("#blablabla")[0].volume = 0.1;
 
@@ -372,6 +374,9 @@ function samleTelefoner6() {
 
 function slutTitel2() {
     console.log("sluttitel");
+    $(".pos12").off("animationend", slutTitel2);
+    $("#haand_container").removeClass("haand_move");
+    $("#haand_container").addClass("haand_move_down");
 
     $("#sluttitel2").removeClass("sluttitel_start_pos2");
     $("#sluttitel2").addClass("sluttitel_ind");
