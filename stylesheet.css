@@ -256,6 +256,25 @@ body {
     left: 5%;
 }
 
+#replay_btn {
+    position: absolute;
+    right: 5vw;
+    top: 5vw;
+
+    background-image: url(img/replay.svg);
+    background-size: 100% 100%;
+
+    width: 5vw;
+    height: 5vw;
+
+    transition: all 0.4 ease;
+}
+
+#replay_btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 @keyframes sluttitel_ind_kf {
     0% {
         opacity: 0
