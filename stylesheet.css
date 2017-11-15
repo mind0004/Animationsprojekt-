@@ -337,7 +337,7 @@ body {
 #haand_container {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;
+    background-size: 800% 300%;
     height: 100vw;
     width: 65vw;
     z-index: 1;
@@ -435,7 +435,7 @@ body {
 #haand_fingre_sprite {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;
+    background-size: 800% 300%;
     height: 100%;
     width: 100%;
     background-position: 0 200%;
@@ -443,17 +443,17 @@ body {
     z-index: 5;
 }
 
-#haand_tommelfinger_sprite {
+.haand_tommelfinger_sprite {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
-    background-size: 400% 300%;
+    background-size: 800% 300%;
     height: 100%;
     width: 100%;
     background-position: 0% 250%;
     animation-name: thumb_kf;
-    animation-duration: .2s;
+    animation-duration: .3s;
     animation-iteration-count: 1;
-    animation-timing-function: steps(2);
+    animation-timing-function: steps(4);
     animation-fill-mode: forwards;
     animation-delay: 2s;
 
@@ -463,16 +463,38 @@ body {
 
 @keyframes thumb_kf {
     0% {
-        background-position: 0% 250%
+        background-position: 0% 250%;
     }
     100% {
-        background-position: -199.8% 250%
+        background-position: -400% 250%;
     }
 
 }
 
 
-.haand_lock_screen {}
+.haand_lock_screen {
+    position: absolute;
+    background-image: url(img/spritesheet_hand.svg);
+    background-size: 800% 300%;
+    height: 100%;
+    width: 100%;
+    background-position: 0% 250%;
+    animation-name: thumb_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes lockscreen_kf {
+    0% {
+        background-position: -400% 250%;
+    }
+    100% {
+        background-position: -600% 250%;
+    }
+}
 
 #topbar {
     position: absolute;
