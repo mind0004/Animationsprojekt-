@@ -830,6 +830,7 @@ span {
     color: black;
     text-align: center;
 }
+
 #godven {
     position: absolute;
     left: 50vw;
@@ -1540,8 +1541,8 @@ span {
 
 .btn_billede_er_delt {
     position: relative;
-    left: 56%;
-    top: 40%;
+    left: 50%;
+    top: 34%;
     height: 16vw;
     width: 42vw;
     background-color: #f4912d;
@@ -1563,15 +1564,15 @@ span {
 
 .btn_indsaml {
     position: absolute;
-    left: 16%;
-    top: 3%;
+    left: 12%;
+    top: 7%;
     height: 9vw;
-    width: 70vw;
+    width: 78vw;
     background-color: #f4912d;
     z-index: 50;
     font-size: 3.8vw;
     border: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: white;
     font-family: 'roboto', sans-serif;
 

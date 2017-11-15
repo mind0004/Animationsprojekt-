@@ -320,6 +320,7 @@ function samleTelefoner2() {
 
     $(".iphone").on("click", samleTelefoner2Check);
 
+    $(".btn_indsaml").hide();
 
 
     $("#plob")[0].play();
