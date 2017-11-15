@@ -187,6 +187,11 @@ function moveUp() {
 function lockScreen() {
     console.log("lockScreen");
 
+    $("#haand_tommelfinger_sprite").removeClass("haand_swipe");
+    $("#haand_tommelfinger_sprite").addClass("haand_lock_screen");
+
+    $("#sluk").addClass("sluk_start");
+
     setTimeout(slutTitel, 1500);
 }
 
