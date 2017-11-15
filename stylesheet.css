@@ -28,6 +28,8 @@ body {
     z-index: 20;
 }
 
+
+
 #baggrund {
     position: absolute;
     top: 0;
@@ -830,7 +832,7 @@ span {
 }
 
 
-.godven {
+#godven {
     position: absolute;
     left: 50vw;
     top: 15vw;
@@ -845,23 +847,9 @@ span {
     text-align: center;
     padding-top: 10px;
 
-    animation-name: godven_kf;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
 
 
-@keyframes godven_kf {
-    0‰ {
-        opacity: 0;
-        transform: scale(1);
-    }
-
-    100‰ {
-        opacity: 1;
-        transform: scale(2);
-    }
-}
 
 
 .move_up {

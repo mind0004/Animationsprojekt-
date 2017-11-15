@@ -7,6 +7,7 @@ function startSkaerm() {
 
     $("#titel").addClass("titel_start_pos");
     $("#titel").addClass("titel_ind");
+    $("#godven").hide();
 
     $(".btn_del").off();
     $(".btn_del").hide();
@@ -20,7 +21,6 @@ function startSkaerm() {
     $(".btn_billede_er_delt").off();
 
     $(".btn_indsaml").hide();
-    $(".godven").hide();
 
 
     $(".telefon_container").hide();
@@ -214,10 +214,9 @@ function lockScreen() {
 
 function godven() {
     console.log("Godven");
-    $(".godven").show();
+    $("#godven").show();
 
-    //setTimeout(slutTitel, 1500);
-    //setTimeout(slutTitel, 1500);
+    setTimeout(slutTitel, 2000);
 
 }
 
@@ -225,7 +224,7 @@ function godven() {
 function slutTitel() {
     console.log("sluttitel");
 
-    $(".godven").hide();
+    $("#godven").hide();
 
 
     $("#logo").removeClass("hide_logo");
