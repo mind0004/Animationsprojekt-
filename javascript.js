@@ -202,6 +202,9 @@ function lockScreen() {
 function slutTitel() {
     console.log("sluttitel");
 
+    $("#logo").removeClass("hide_logo");
+    $("#logo").addClass("show_logo");
+
     $("#sluttitel").removeClass("sluttitel_start_pos");
     $("#sluttitel").addClass("sluttitel_ind");
 

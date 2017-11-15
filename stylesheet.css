@@ -221,7 +221,7 @@ body {
     height: 100%;
 }
 
-.logo {
+#logo {
     position: absolute;
     z-index: 27;
     background-image: url(img/PrivatSnak_logo.svg);
@@ -240,8 +240,8 @@ body {
     animation-timing-function: linear;
 }
 
-.logo:hover {
-    transform: scale(1.1);
+#logo:hover {
+    transform: scale(1.2);
 }
 
 @keyframes hover_kf {
@@ -256,9 +256,12 @@ body {
     }
 }
 
-.logo:hover {
-    transform: scale(1.1);
+.hide_logo {
+    display: none;
+}
 
+.show_logo {
+    display: block;
 }
 
 #sluttitel h2 {
@@ -286,7 +289,7 @@ body {
 }
 
 #replay_btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     cursor: pointer;
 }
 
