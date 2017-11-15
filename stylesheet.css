@@ -747,6 +747,22 @@ body {
     position: absolute;
     transform: scale(1.5);
     z-index: 55;
+
+    animation-name: pulse_kf;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1.7);
+    }
 }
 
 .pos1 {
