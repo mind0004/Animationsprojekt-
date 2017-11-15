@@ -830,8 +830,6 @@ span {
     color: black;
     text-align: center;
 }
-
-
 #godven {
     position: absolute;
     left: 50vw;
@@ -846,32 +844,8 @@ span {
     color: white;
     text-align: center;
 
-<<<<<<< HEAD
-    transform: scale(2);
 
-    animation-name: test_kf;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
-
-
-@keyframes test_kf {
-    0‰ {
-        opacity: 0;
-        transform: scale(1);
-    }
-
-    100‰ {
-        opacity: 1;
-        transform: scale(2);
-    }
-}
-=======
-}
-
-
->>>>>>> origin/master
-
 
 .move_up {
     padding-top: 0;
