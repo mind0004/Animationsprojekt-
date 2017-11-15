@@ -28,6 +28,8 @@ body {
     z-index: 20;
 }
 
+
+
 #baggrund {
     position: absolute;
     top: 0;
@@ -830,7 +832,7 @@ span {
 }
 
 
-.godven {
+#godven {
     position: absolute;
     left: 50vw;
     top: 15vw;
@@ -844,6 +846,7 @@ span {
     color: white;
     text-align: center;
 
+<<<<<<< HEAD
     transform: scale(2);
 
     animation-name: test_kf;
@@ -863,6 +866,11 @@ span {
         transform: scale(2);
     }
 }
+=======
+}
+
+
+>>>>>>> origin/master
 
 
 .move_up {
