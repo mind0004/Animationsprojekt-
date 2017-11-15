@@ -443,7 +443,7 @@ body {
     z-index: 5;
 }
 
-.haand_tommelfinger_sprite {
+#haand_tommelfinger_sprite {
     position: absolute;
     background-image: url(img/spritesheet_hand.svg);
     background-size: 800% 300%;
