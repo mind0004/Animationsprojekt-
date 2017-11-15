@@ -213,6 +213,8 @@ function lockScreen() {
 function slutTitel() {
     console.log("sluttitel");
 
+    $(".pos12").off("animationend", samleTelefoner6);
+
 
     $("#logo").removeClass("hide_logo");
     $("#logo").addClass("show_logo");
@@ -240,6 +242,10 @@ function replayButton() {
 
 function samleTelefoner() {
     console.log("samleTelefoner");
+
+    $(".iphone").addClass(".iphone_pulse");
+
+    $("#haand_container").addClass("haand_move_down");
 
     $(".btn_billede_er_delt").off("click", samleTelefoner);
 
@@ -402,16 +408,7 @@ function samleTelefoner6() {
     $(".pos11").addClass("pos11_moveout");
     $(".pos12").addClass("pos12_moveout");
 
-    $(".pos12").on("animationend", haandNed);
-}
-
-
-function haandNed() {
-
-    $(".pos12").off("animationend", haandNed);
-    $("#haand_container").addClass("haand_move_down");
-
-    slutTitel();
+    $(".pos12").on("animationend", slutTitel);
 }
 
 
