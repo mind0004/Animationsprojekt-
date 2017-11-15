@@ -643,7 +643,7 @@ span {
     animation-name: besked_to_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    /*    animation-delay: 2s;*/
+    animation-delay: 2s;
 }
 
 @keyframes besked_to_kf {
@@ -695,7 +695,7 @@ span {
     animation-name: besked_tre_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    /*    animation-delay: 3s;*/
+    animation-delay: 2s;
     /*animation-iteration-count: infinite; */
 }
 
@@ -716,7 +716,6 @@ span {
     animation-name: besked3_up_kf;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    /*    animation-delay: 2s;*/
 }
 
 @keyframes besked3_up_kf {
@@ -747,7 +746,7 @@ span {
     animation-name: besked_fire_kf;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    /*    animation-delay: 1s;*/
+    animation-delay: 1s;
 }
 
 
