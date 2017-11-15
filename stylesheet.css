@@ -745,7 +745,7 @@ body {
     background-image: url(img/iphone%20.svg);
     background-size: cover;
     position: absolute;
-    transform: scale(1.5);
+    transform: scale(1);
     z-index: 55;
 
     animation-name: pulse_kf;
@@ -757,11 +757,11 @@ body {
 
 @keyframes pulse_kf {
     0% {
-        transform: scale(1.5);
+        transform: scale(1);
     }
 
     100% {
-        transform: scale(1.7);
+        transform: scale(1.2);
     }
 }
 
@@ -823,6 +823,271 @@ body {
 .pos12 {
     top: 5%;
     left: 90%;
+}
+
+.pos1_moveout {
+    animation-name: pos1_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos1_moveout_kf {
+    0% {
+        top: 45%;
+        left: 65%;
+    }
+
+    100% {
+        top: 55%;
+        left: 110%;
+    }
+}
+
+.pos2_moveout {
+    animation-name: pos2_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos2_moveout_kf {
+    0% {
+        top: 20vw;
+        left: 0vw;
+    }
+
+    100% {
+        top: 20vw;
+        left: -20%;
+    }
+}
+
+.pos3_moveout {
+    animation-name: pos3_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos3_moveout_kf {
+    0% {
+        top: 5vw;
+        left: 15vw;
+    }
+
+    100% {
+        top: 0vw;
+        left: -20%;
+    }
+}
+
+.pos4_moveout {
+    animation-name: pos4_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos4_moveout_kf {
+    0% {
+        top: 2vw;
+        left: 30vw;
+    }
+
+    100% {
+        top: 0vw;
+        left: -20%;
+    }
+}
+
+.pos5_moveout {
+    animation-name: pos5_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos5_moveout_kf {
+    0% {
+        top: 20vw;
+        left: 80vw;
+    }
+
+    100% {
+        top: 0vw;
+        left: 120%;
+    }
+}
+
+.pos6_moveout {
+    animation-name: pos6_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos6_moveout_kf {
+    0% {
+        top: 10vw;
+        left: 60vw;
+    }
+
+    100% {
+        top: 0vw;
+        left: 120%;
+    }
+}
+
+.pos7_moveout {
+    animation-name: pos7_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos7_moveout_kf {
+    0% {
+        top: 50%;
+        left: 33vw;
+    }
+
+    100% {
+        top: 110%;
+        left: 11vw;
+        ;
+    }
+}
+
+.pos8_moveout {
+    animation-name: pos8_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos8_moveout_kf {
+    0% {
+        top: 65%;
+        left: 5%;
+    }
+
+    100% {
+        top: 85%;
+        left: -20%;
+    }
+}
+
+.pos9_moveout {
+    animation-name: pos9_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos9_moveout_kf {
+    0% {
+        top: 70%;
+        left: 60vw;
+    }
+
+    100% {
+        top: 120%;
+        left: 120%;
+    }
+}
+
+.pos10_moveout {
+    animation-name: pos10_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos10_moveout_kf {
+    0% {
+        top: 60%;
+        left: 90%;
+    }
+
+    100% {
+        top: 120%;
+        left: 90%;
+    }
+}
+
+.pos11_moveout {
+    animation-name: pos11_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos11_moveout_kf {
+    0% {
+        top: 30%;
+        left: 45%;
+    }
+
+    100% {
+        top: -20%;
+        left: -20%;
+    }
+}
+
+.pos12_moveout {
+    animation-name: pos12_moveout_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes pos12_moveout_kf {
+    0% {
+        top: 5%;
+        left: 90%;
+    }
+
+    100% {
+        top: 5%;
+        left: 120%;
+    }
 }
 
 /******* BUTTONS *******/

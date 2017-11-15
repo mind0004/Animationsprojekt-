@@ -348,6 +348,18 @@ function samleTelefoner5Check() {
 function samleTelefoner6() {
     console.log("samleTelefoner6");
 
+    $(".pos1").addClass("pos1_moveout");
+    $(".pos2").addClass("pos2_moveout");
+    $(".pos3").addClass("pos3_moveout");
+    $(".pos4").addClass("pos4_moveout");
+    $(".pos5").addClass("pos5_moveout");
+    $(".pos6").addClass("pos6_moveout");
+    $(".pos7").addClass("pos7_moveout");
+    $(".pos8").addClass("pos8_moveout");
+    $(".pos9").addClass("pos9_moveout");
+    $(".pos10").addClass("pos10_moveout");
+    $(".pos11").addClass("pos11_moveout");
+    $(".pos12").addClass("pos12_moveout");
 }
 
 
