@@ -264,11 +264,11 @@ body {
     position: absolute;
     font-size: 4vw;
     color: white;
-    top: 70%;
+    top: 5%;
     left: 5%;
 }
 
-<<<<<<< HEAD #replay_btn {
+#replay_btn {
     position: absolute;
     right: 5vw;
     top: 5vw;
@@ -291,9 +291,15 @@ body {
     position: absolute;
     font-size: 4vw;
     color: white;
-    top: 59%;
+    top: 5%;
     left: 5%;
 }
+
+
+span {
+    color: #f4912d;
+}
+
 
 @keyframes sluttitel_ind_kf {
     0% {
