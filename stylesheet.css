@@ -28,6 +28,8 @@ body {
     z-index: 20;
 }
 
+
+
 #baggrund {
     position: absolute;
     top: 0;
@@ -829,6 +831,27 @@ span {
     text-align: center;
 }
 
+
+#godven {
+    position: absolute;
+    left: 50vw;
+    top: 15vw;
+    height: 20vw;
+    width: 45vw;
+    background-color: #f4912d;
+    z-index: 51;
+    font-size: 3.4vw;
+    border-radius: 20px;
+    font-family: 'roboto', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+
+
 .move_up {
     padding-top: 0;
     animation-delay: 1s;
@@ -898,7 +921,7 @@ span {
 
 .pos2 {
     top: 20vw;
-    left: 0vw;
+    left: 3vw;
 }
 
 .pos3 {
