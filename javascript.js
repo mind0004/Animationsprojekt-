@@ -20,6 +20,8 @@ function startSkaerm() {
     $(".btn_billede_er_delt").off();
 
     $(".btn_indsaml").hide();
+    $(".godven").hide();
+
 
     $(".telefon_container").hide();
     $(".telefon_container").off();
@@ -207,11 +209,32 @@ function lockScreen() {
 
 
 
-    setTimeout(slutTitel, 1500);
+    setTimeout(godven, 1500);
 }
+
+
+
+function godven() {
+
+    $(".godven").show();
+
+    setTimeout(slutTitel, 1500);
+
+
+}
+
+
+
+
+
+
+
+
 
 function slutTitel() {
     console.log("sluttitel");
+
+    $(".godven").hide();
 
 
     $("#logo").removeClass("hide_logo");
