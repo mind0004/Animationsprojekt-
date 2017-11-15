@@ -1295,10 +1295,10 @@ span {
 
 .btn_billede_er_delt {
     position: relative;
-    left: 58%;
+    left: 56%;
     top: 40%;
-    height: 9vw;
-    width: 40vw;
+    height: 16vw;
+    width: 42vw;
     background-color: #f4912d;
     z-index: 50;
     font-size: 3.4vw;
