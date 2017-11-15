@@ -213,7 +213,7 @@ body {
 
 #sluttitel2 {
     position: absolute;
-    z-index: 25;
+    z-index: 20;
     background-color: #333333;
     background-image: url(img/titelslut.svg);
     background-size: 100% 100%;
@@ -232,6 +232,7 @@ body {
     top: 68%;
 
     transition: all 0.5s ease;
+
     animation-name: hover_kf;
     animation-duration: 0.6s;
     animation-iteration-count: infinite;
@@ -268,10 +269,11 @@ body {
     left: 5%;
 }
 
-<<<<<<< HEAD #replay_btn {
+#replay_btn {
     position: absolute;
     right: 5vw;
     top: 5vw;
+    z-index: 28;
 
     background-image: url(img/replay.svg);
     background-size: 100% 100%;
@@ -279,7 +281,7 @@ body {
     width: 5vw;
     height: 5vw;
 
-    transition: all 0.4 ease;
+    transition: all 0.4s ease;
 }
 
 #replay_btn:hover {
@@ -297,7 +299,7 @@ body {
 
 @keyframes sluttitel_ind_kf {
     0% {
-        opacity: 0
+        opacity: 0;
     }
 
     100% {
@@ -307,6 +309,12 @@ body {
 
 
 .sluttitel_start_pos {
+    opacity: 0;
+    left: 0%;
+    top: 0%;
+}
+
+.sluttitel_start_pos2 {
     opacity: 0;
     left: 0%;
     top: 0%;
