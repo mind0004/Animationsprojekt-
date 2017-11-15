@@ -204,7 +204,7 @@ body {
     left: 0%;
     top: 0%;
     animation-name: sluttitel_ind_kf;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
 }
@@ -366,6 +366,8 @@ body {
     height: 30.9vw;
     left: 10.8%;
     top: 7.1%;
+    z-index: 4;
+    overflow: hidden;
 }
 
 #mobil_container {
@@ -450,14 +452,17 @@ body {
     height: 100%;
     width: 100%;
     background-position: 0% 250%;
+
+    z-index: 5;
+}
+
+.haand_swipe {
     animation-name: thumb_kf;
     animation-duration: .4s;
     animation-iteration-count: 1;
     animation-timing-function: steps(4);
     animation-fill-mode: forwards;
     animation-delay: 2.5s;
-
-    z-index: 5;
 }
 
 
@@ -468,18 +473,11 @@ body {
     100% {
         background-position: -400% 250%;
     }
-
 }
 
 
 .haand_lock_screen {
-    position: absolute;
-    background-image: url(img/spritesheet_hand.svg);
-    background-size: 800% 300%;
-    height: 100%;
-    width: 100%;
-    background-position: 0% 250%;
-    animation-name: thumb_kf;
+    animation-name: lockscreen_kf;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: steps(2);
@@ -493,6 +491,34 @@ body {
     }
     100% {
         background-position: -600% 250%;
+    }
+}
+
+#sluk {
+    position: absolute;
+    z-index: 6;
+    background-color: black;
+    width: 110%;
+    height: 110%;
+    opacity: 0;
+}
+
+.sluk_start {
+    opacity: 0;
+    animation-name: sluk_kf;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes sluk_kf {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
