@@ -26,7 +26,8 @@ function startSkaerm() {
 
     $("#scene_2").hide();
 
-    $("sluttitel2").hide();
+    $("#sluttitel").hide();
+    $("#sluttitel2").hide();
 
     $(".btn_start").show();
     $(".btn_start").on("click", startHistorie);
@@ -202,8 +203,12 @@ function lockScreen() {
 function slutTitel() {
     console.log("sluttitel");
 
+<<<<<<< HEAD
     $("#logo").removeClass("hide_logo");
     $("#logo").addClass("show_logo");
+=======
+    $("#sluttitel").show();
+>>>>>>> origin/master
 
     $("#sluttitel").removeClass("sluttitel_start_pos");
     $("#sluttitel").addClass("sluttitel_ind");
@@ -388,13 +393,15 @@ function samleTelefoner6() {
     $(".pos11").addClass("pos11_moveout");
     $(".pos12").addClass("pos12_moveout");
 
-    //$(".pos12").on("animationend", slutTitel2);
+    $(".pos12").on("animationend", slutTitel2);
 }
 
-/*
+
 function slutTitel2() {
     console.log("sluttitel");
     $(".pos12").off("animationend", slutTitel2);
+
+    $("#sluttitel2").show();
     $("#haand_container").removeClass("haand_move");
     $("#haand_container").addClass("haand_move_down");
 
@@ -402,7 +409,7 @@ function slutTitel2() {
     $("#sluttitel2").addClass("sluttitel_ind");
     $("#baggrundslyd")[0].pause();
 }
-*/
+
 
 
 /*******************************/
