@@ -269,6 +269,8 @@ function samleTelefoner2() {
     $(".pos1").hide();
 
     $(".pos2").show();
+    $(".btn_indsaml").hide();
+
 
     $(".iphone").on("click", samleTelefoner2Check);
 }
@@ -373,7 +375,6 @@ function samleTelefoner5Check() {
         $(".pos10").show();
         $(".pos11").show();
         $(".pos12").show();
-        $(".btn_indsaml").hide();
 
 
     } else {
