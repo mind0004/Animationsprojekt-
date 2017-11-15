@@ -843,15 +843,16 @@ span {
     font-family: 'roboto', sans-serif;
     color: white;
     text-align: center;
-    padding-top: 10px;
 
-    animation-name: godven_kf;
+    transform: scale(2);
+
+    animation-name: test_kf;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
 
-@keyframes godven_kf {
+@keyframes test_kf {
     0‰ {
         opacity: 0;
         transform: scale(1);
