@@ -26,6 +26,9 @@ function startSkaerm() {
 
     $("#scene_2").hide();
 
+    $("#sluttitel").hide();
+    $("#sluttitel2").hide();
+
     $(".btn_start").show();
     $(".btn_start").on("click", startHistorie);
 }
@@ -206,6 +209,12 @@ function lockScreen() {
 function slutTitel() {
     console.log("sluttitel");
 
+
+    $("#logo").removeClass("hide_logo");
+    $("#logo").addClass("show_logo");
+
+    $("#sluttitel").show();
+
     $("#sluttitel").removeClass("sluttitel_start_pos");
     $("#sluttitel").addClass("sluttitel_ind");
 
@@ -213,12 +222,14 @@ function slutTitel() {
     $("#replay_btn").addClass("replay_btn_ind");
 
     $("#baggrundslyd")[0].pause();
+
 }
 
 
 $("#replay_btn").on("click", replayButton);
 
 function replayButton() {
+    console.log("reset");
     document.location.reload(true);
 
 }
@@ -390,9 +401,12 @@ function samleTelefoner6() {
     $(".pos12").on("animationend", slutTitel2);
 }
 
+
 function slutTitel2() {
     console.log("sluttitel");
     $(".pos12").off("animationend", slutTitel2);
+
+    $("#sluttitel2").show();
     $("#haand_container").removeClass("haand_move");
     $("#haand_container").addClass("haand_move_down");
 
@@ -400,6 +414,7 @@ function slutTitel2() {
     $("#sluttitel2").addClass("sluttitel_ind");
     $("#baggrundslyd")[0].pause();
 }
+
 
 
 /*******************************/
