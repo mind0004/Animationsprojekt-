@@ -268,8 +268,7 @@ body {
     left: 5%;
 }
 
-<<<<<<< HEAD
-#replay_btn {
+<<<<<<< HEAD #replay_btn {
     position: absolute;
     right: 5vw;
     top: 5vw;
@@ -286,14 +285,14 @@ body {
 #replay_btn:hover {
     transform: scale(1.1);
     cursor: pointer;
-=======
+}
+
 #sluttitel2 h2 {
     position: absolute;
     font-size: 4vw;
     color: white;
     top: 59%;
     left: 5%;
->>>>>>> origin/master
 }
 
 @keyframes sluttitel_ind_kf {
@@ -876,7 +875,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
 }
 
 .iphone:hover {
