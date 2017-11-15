@@ -337,6 +337,7 @@ function samleTelefoner5Check() {
         $(".pos10").show();
         $(".pos11").show();
         $(".pos12").show();
+        $(".btn_indsaml").hide();
 
 
     } else {
@@ -360,6 +361,16 @@ function samleTelefoner6() {
     $(".pos10").addClass("pos10_moveout");
     $(".pos11").addClass("pos11_moveout");
     $(".pos12").addClass("pos12_moveout");
+
+    $(".pos12").on("animationend", slutTitel2);
+}
+
+function slutTitel2() {
+    console.log("sluttitel");
+
+    $("#sluttitel2").removeClass("sluttitel_start_pos2");
+    $("#sluttitel2").addClass("sluttitel_ind");
+    $("#baggrundslyd")[0].pause();
 }
 
 

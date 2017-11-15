@@ -113,8 +113,6 @@ body {
     height: 50vw;
 }
 
-
-
 .titel_ind {
     animation-name: titel_ind_kf;
     animation-duration: 2.5s;
@@ -186,6 +184,10 @@ body {
     margin-left: 6%;
 }
 
+#titel2 p {
+    margin-left: 6%;
+}
+
 /*** SLUT TITEL **/
 
 #sluttitel {
@@ -207,6 +209,16 @@ body {
     animation-duration: 2.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
+}
+
+#sluttitel2 {
+    position: absolute;
+    z-index: 25;
+    background-color: #333333;
+    background-image: url(img/titelslut.svg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
@@ -253,6 +265,14 @@ body {
     font-size: 4vw;
     color: white;
     top: 70%;
+    left: 5%;
+}
+
+#sluttitel2 h2 {
+    position: absolute;
+    font-size: 4vw;
+    color: white;
+    top: 59%;
     left: 5%;
 }
 
@@ -344,8 +364,6 @@ body {
     animation-name: move_kf;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-
-
 }
 
 @keyframes move_kf {
