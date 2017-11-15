@@ -32,7 +32,7 @@ function startSkaerm() {
     $(".btn_start").show();
     $(".btn_start").on("click", startHistorie);
     $("#godven ").hide();
-
+    $("#daarligven").hide();
 
 
 }
@@ -243,7 +243,8 @@ function godven() {
 function slutTitel() {
     console.log("sluttitel");
 
-    $("#godven ").hide();
+    $("#godven").hide();
+    $("#daarligven").hide();
 
 
     $(".pos12").off("animationend", samleTelefoner6);
@@ -487,6 +488,9 @@ function samleTelefoner6() {
     $(".pos12").addClass("pos12_moveout");
 
     $(".pos12").on("animationend", slutTitel);
+
+    $("#daarligven").show();
+
 }
 
 

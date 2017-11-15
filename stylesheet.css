@@ -423,7 +423,7 @@ span {
 #screen {
     position: absolute;
     width: 17.8vw;
-    height: 30.9vw;
+    height: 31vw;
     left: 10.8%;
     top: 7.1%;
     z-index: 4;
@@ -844,6 +844,28 @@ span {
     font-family: 'roboto', sans-serif;
     color: white;
     text-align: center;
+}
+
+
+#daarligven {
+    position: absolute;
+    left: 28vw;
+    top: 15vw;
+    height: 20vw;
+    width: 45vw;
+    background-color: #202532;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+
+#daarligven p {
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    margin-top: 3vw;
+    font-size: 4vw;
+    color: white;
+
 
 
 }
@@ -1470,16 +1492,17 @@ span {
     background-color: #f4912d;
     font-family: 'roboto', sans-serif;
     font-size: 8vw;
+    font-weight: 700;
     border-radius: 10px;
-    width: 20vw;
-    height: 10vw;
-    left: 35%;
+    width: 28vw;
+    height: 12vw;
+    left: 31%;
     border: 2vw black;
     font-size: 8vw;
     z-index: 50;
     top: 40%;
     color: white;
-    line-height: 1;
+    line-height: 1.5;
     transition: all 0.4s ease;
 }
 
