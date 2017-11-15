@@ -71,7 +71,7 @@ function scene2() {
 
     setTimeout(function () {
         new Audio('sound/unlock.mp3').play();
-    }, 2000);
+    }, 2700);
 
     setTimeout(besked2, 4000);
 }
@@ -195,7 +195,7 @@ function slutTitel() {
 
     $("#sluttitel").removeClass("sluttitel_start_pos");
     $("#sluttitel").addClass("sluttitel_ind");
-
+    $("#baggrundslyd")[0].pause();
 }
 
 function samleTelefoner() {
