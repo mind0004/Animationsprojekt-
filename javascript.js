@@ -202,7 +202,19 @@ function slutTitel() {
 
     $("#sluttitel").removeClass("sluttitel_start_pos");
     $("#sluttitel").addClass("sluttitel_ind");
+
+    $("#replay_btn").removeClass("replay_btn_start");
+    $("#replay_btn").addClass("replay_btn_ind");
+
     $("#baggrundslyd")[0].pause();
+}
+
+
+$("#replay_btn").on("click", replayButton);
+
+function replayButton() {
+    document.location.reload(true);
+
 }
 
 function samleTelefoner() {

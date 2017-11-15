@@ -856,6 +856,11 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
+    transition: all 0.2 ease;
+}
+
+.iphone:hover {
+    cursor: pointer;
 }
 
 @keyframes pulse_kf {
