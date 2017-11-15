@@ -207,28 +207,19 @@ function lockScreen() {
     $("#lock")[0].play();
     $("#lock")[0].volume = 1;
 
-
-
     setTimeout(godven, 1500);
 }
 
 
 
 function godven() {
-
+    console.log("Godven");
     $(".godven").show();
 
-    setTimeout(slutTitel, 1500);
-
+    //setTimeout(slutTitel, 1500);
+    //setTimeout(slutTitel, 1500);
 
 }
-
-
-
-
-
-
-
 
 
 function slutTitel() {
