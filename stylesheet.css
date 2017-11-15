@@ -268,7 +268,7 @@ body {
     position: absolute;
     font-size: 4vw;
     color: white;
-    top: 70%;
+    top: 5%;
     left: 5%;
 }
 
@@ -297,9 +297,15 @@ body {
     position: absolute;
     font-size: 4vw;
     color: white;
-    top: 59%;
+    top: 5%;
     left: 5%;
 }
+
+
+span {
+    color: #f4912d;
+}
+
 
 @keyframes sluttitel_ind_kf {
     0% {

@@ -197,6 +197,12 @@ function lockScreen() {
 
     $("#sluk").addClass("sluk_start");
 
+
+    $("#lock")[0].play();
+    $("#lock")[0].volume = 1;
+
+
+
     setTimeout(slutTitel, 1500);
 }
 
