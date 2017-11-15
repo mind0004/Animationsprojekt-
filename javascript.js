@@ -31,8 +31,8 @@ function startSkaerm() {
 
     $(".btn_start").show();
     $(".btn_start").on("click", startHistorie);
-    $("#godven ").hide();
-    $("#daarligven").hide();
+    //$("#godven ").hide();
+    //$("#daarligven").hide();
 
 
 }
@@ -233,7 +233,10 @@ function lockScreen() {
 
 function godven() {
 
-    $("#godven ").show();
+    //$("#godven").show();
+
+    $("#godven").removeClass("skjul_godven");
+    $("#godven").addClass("vis_godven");
 
     setTimeout(slutTitel, 3000);
 
@@ -243,8 +246,8 @@ function godven() {
 function slutTitel() {
     console.log("sluttitel");
 
-    $("#godven").hide();
-    $("#daarligven").hide();
+    //$("#godven").hide();
+    //$("#daarligven").hide();
 
 
     $(".pos12").off("animationend", samleTelefoner6);
@@ -489,7 +492,13 @@ function samleTelefoner6() {
 
     $(".pos12").on("animationend", slutTitel);
 
-    $("#daarligven").show();
+    //$("#daarligven").show();
+
+    $("#daarligven").removeClass("skjul_daarligven");
+    $("#daarligven").addClass("vis_daarligven");
+
+
+
 
 }
 

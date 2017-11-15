@@ -202,14 +202,13 @@ body {
     height: 100%;
 }
 
-
 .sluttitel_ind {
     opacity: 0;
     left: 0%;
     top: 0%;
     animation-name: sluttitel_ind_kf;
     animation-duration: 1.5s;
-    animation-delay: 0.2s;
+    animation-delay: 0.8s;
     animation-fill-mode: forwards;
 }
 
@@ -833,8 +832,6 @@ span {
 
 #godven {
     position: absolute;
-    left: 50vw;
-    top: 15vw;
     height: 20vw;
     width: 45vw;
     background-color: #f4912d;
@@ -846,18 +843,89 @@ span {
     text-align: center;
 }
 
+.skjul_godven {
+    left: 50vw;
+    top: -30vw;
+}
+
+.vis_godven {
+    left: 50vw;
+    top: -30vw;
+    animation-name: godven_ind_kf;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes godven_ind_kf {
+    0% {
+        left: 50vw;
+        top: -30vw;
+    }
+
+    15% {
+        left: 50vw;
+        top: 15vw;
+    }
+
+    85% {
+        left: 50vw;
+        top: 15vw;
+    }
+
+    100% {
+        left: 50vw;
+        top: -30vw;
+    }
+}
+
 
 #daarligven {
     position: absolute;
-    left: 28vw;
-    top: 15vw;
     height: 20vw;
     width: 45vw;
     background-color: #202532;
     z-index: 100;
     border-radius: 20px;
+    left: 28vw;
+    top: -30vw;
 }
 
+.skjul_daarligven {
+    left: 28vw;
+    top: -30vw;
+}
+
+.vis_daarligven {
+    left: 28vw;
+    top: 15vw;
+    animation-name: daarligven_ind_kf;
+    animation-duration: 5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes daarligven_ind_kf {
+    0% {
+        left: 28vw;
+        top: -30vw;
+    }
+
+    15% {
+        left: 28vw;
+        top: 15vw;
+    }
+
+    85% {
+        left: 28vw;
+        top: 15vw;
+    }
+
+    100% {
+        left: 28vw;
+        top: -30vw;
+    }
+}
 
 #daarligven p {
     text-align: center;
